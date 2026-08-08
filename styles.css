@@ -210,7 +210,8 @@ h1 {
   display: flex; align-items: center; justify-content: center;
 }
 .mock-review .name { font-weight: 700; font-size: 0.9rem; }
-.mock-review .stars { color: #f0b429; font-size: 0.75rem; }
+.mock-review .stars { display: flex; gap: 2px; color: #f0b429; margin-top: 2px; }
+.mock-review .stars svg.empty { color: var(--border); }
 .mock-review .time { margin-left: auto; font-size: 0.75rem; color: var(--muted); }
 .mock-review p { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
 .mock-tag {
@@ -257,16 +258,18 @@ h2 {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.service-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 32px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
 }
-.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.service-card {
+  padding: 32px;
+  border-right: 1px solid var(--border);
+  transition: background 0.2s;
+}
+.service-card:last-child { border-right: none; }
+.service-card:hover { background: var(--bg-soft); }
 .service-icon {
   width: 48px;
   height: 48px;
@@ -503,7 +506,10 @@ footer {
 @media (max-width: 760px) {
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.7rem; }
-  .services-grid, .case-grid, .feature-grid, .steps { grid-template-columns: 1fr; }
+  .case-grid, .feature-grid, .steps { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { border-right: none; border-bottom: 1px solid var(--border); }
+  .service-card:last-child { border-bottom: none; }
   .why-card { grid-template-columns: 1fr; }
   .why-item:nth-child(odd) { border-right: none; }
   .why-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrowGigs — Local SEO, PPC Ads & Online Reputation Management</title>
+<meta name="description" content="GrowGigs helps local businesses rank higher, run profitable ad campaigns, and clean up their online reputation — including review removal on Google, Trustpilot, Glassdoor and Yelp, on a pay-per-removal basis.">
+<style>
+  :root {
+    --ink: #232323;
+    --muted: #5f5f5f;
+    --bg: #ffffff;
+    --bg-soft: #f6f8f6;
+    --card: #ffffff;
+    --border: #e4e8e3;
+    --green-light: #8cc63f;
+    --green: #159f4a;
+    --teal: #4fc7c3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  a { color: inherit; }
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .brand svg { display: block; }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .btn {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn:hover { background: #0f7d3a; }
+
+  .hero {
+    padding: 88px 0 72px;
+    background: linear-gradient(180deg, var(--bg-soft), var(--bg) 70%);
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 13px;
+    color: var(--green);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    max-width: 20ch;
+  }
+  .hero .sub {
+    font-size: 1.15rem;
+    color: var(--muted);
+    max-width: 58ch;
+    margin: 0 0 32px;
+  }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-outline {
+    display: inline-block;
+    border: 1px solid var(--border);
+    color: var(--ink);
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btn-outline:hover { border-color: var(--green); }
+
+  section { padding: 72px 0; }
+  h2 {
+    font-size: 1.9rem;
+    margin: 0 0 12px;
+  }
+  .section-sub {
+    color: var(--muted);
+    max-width: 60ch;
+    margin: 0 0 44px;
+    font-size: 1.02rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .service-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 30px;
+  }
+  .service-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+  }
+  .service-card h3 {
+    font-size: 1.15rem;
+    margin: 0 0 10px;
+  }
+  .service-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 14px;
+  }
+  .service-card ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .service-card ul li { margin-bottom: 6px; }
+  .pill {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--green);
+    background: rgba(21,159,74,0.1);
+    padding: 5px 10px;
+    border-radius: 999px;
+  }
+
+  .why {
+    background: var(--bg-soft);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .why-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .why-item .check {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .why-item h4 { margin: 0 0 4px; font-size: 1rem; }
+  .why-item p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+  .contact-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .contact-info h2 { margin-bottom: 14px; }
+  .contact-info p { color: var(--muted); }
+  .contact-info .method {
+    margin-top: 24px;
+    font-size: 0.95rem;
+  }
+  .contact-info .method strong { display: block; margin-bottom: 2px; }
+
+  form { display: grid; gap: 14px; }
+  label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #fff;
+    color: var(--ink);
+    font-family: inherit;
+  }
+  textarea { resize: vertical; min-height: 90px; }
+  input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--green);
+    outline-offset: 1px;
+  }
+  .success {
+    display: none;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .success.shown { display: block; }
+  .success h3 { margin-bottom: 6px; }
+  .success p { color: var(--muted); }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 760px) {
+    h1 { font-size: 2rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .contact-card { grid-template-columns: 1fr; padding: 26px; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand">
+      <svg width="30" height="34" viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28,64 C10,56 2,42 14,20 C22,34 26,48 28,64 Z" fill="#8cc63f"/>
+        <path d="M28,64 C18,48 18,22 28,4 C38,22 38,48 28,64 Z" fill="#159f4a"/>
+        <path d="M28,64 C30,44 36,22 46,10 C50,32 46,50 28,64 Z" fill="#4fc7c3"/>
+      </svg>
+      GrowGigs
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn">Get a Free Consultation</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Local Growth Marketing</div>
+    <h1>More visibility. Fewer bad reviews. More customers.</h1>
+    <p class="sub">
+      GrowGigs helps local businesses rank higher in search, run ad campaigns that
+      actually convert, and clean up a damaged online reputation — including
+      negative review removal on Google, Trustpilot, Glassdoor, and Yelp, billed
+      only on the reviews we actually get removed.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn">Get a Free Consultation</a>
+      <a href="#services" class="btn-outline">See Our Services</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="section-sub">Three services, one goal: more of the right customers finding — and trusting — your business.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon" style="background: rgba(140,198,63,0.15);">📍</div>
+        <h3>Local SEO</h3>
+        <p>Get found by customers searching for what you do, right where you do it.</p>
+        <ul>
+          <li>Google Business Profile optimization</li>
+          <li>Local map pack &amp; search rankings</li>
+          <li>On-page &amp; citation SEO</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background: rgba(21,159,74,0.15);">📈</div>
+        <h3>PPC Ads</h3>
+        <p>Paid campaigns built around conversions, not just clicks.</p>
+        <ul>
+          <li>Google &amp; social ad management</li>
+          <li>Landing pages that convert</li>
+          <li>Transparent spend &amp; ROI reporting</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background: rgba(79,199,195,0.15);">🛡️</div>
+        <h3>Online Reputation Management</h3>
+        <p>We remove the reviews dragging your business down — across every major platform.</p>
+        <ul>
+          <li>Google, Trustpilot, Glassdoor &amp; Yelp</li>
+          <li>Other review platforms on request</li>
+          <li>Pay-per-removal — no upfront risk</li>
+        </ul>
+        <span class="pill">Pay only for removals that succeed</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why">
+  <div class="wrap">
+    <h2>Why local businesses work with GrowGigs</h2>
+    <p class="section-sub">No long contracts, no vague reporting, no charging you for work that didn't happen.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h4>Pay-per-removal reputation management</h4>
+          <p>You're only billed for reviews we actually get taken down — not for attempts.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h4>Built for local visibility</h4>
+          <p>SEO and ads work aimed squarely at your map pack and local search rankings, not vanity traffic.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h4>Straight answers, no account-manager layers</h4>
+          <p>You talk directly with the people doing the work.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h4>Every major review platform covered</h4>
+          <p>Google, Trustpilot, Glassdoor, Yelp — and others on request.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="contact-info">
+        <h2>Let's talk about your business</h2>
+        <p>Tell us a bit about what you need — local SEO, PPC, review removal, or all three — and we'll get back to you with next steps.</p>
+        <div class="method">
+          <strong>Prefer email?</strong>
+          <span>hello@growgigs.io</span>
+        </div>
+      </div>
+
+      <div>
+        <div id="form-panel">
+          <!--
+            SETUP NOTE (remove once configured):
+            1. Go to https://formspree.io and create a free form for growgigs.io.
+            2. Replace YOUR_FORM_ID below with the real form ID.
+          -->
+          <form id="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" required>
+            </div>
+            <div>
+              <label for="service">What do you need help with?</label>
+              <select id="service" name="service_needed" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Local SEO</option>
+                <option>PPC Ads</option>
+                <option>Online Reputation Management / Review Removal</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Anything else we should know?</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn">Get a Free Consultation</button>
+          </form>
+        </div>
+        <div id="success" class="success">
+          <h3>Thanks — got it!</h3>
+          <p>We'll be in touch shortly to talk through next steps.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> GrowGigs. Local SEO, PPC &amp; Online Reputation Management.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const form = document.getElementById("lead-form");
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { "Accept": "application/json" },
+      });
+      if (response.ok) {
+        document.getElementById("form-panel").style.display = "none";
+        document.getElementById("success").classList.add("shown");
+      } else {
+        alert("Something went wrong submitting the form. Please try again or email us directly.");
+      }
+    } catch (err) {
+      alert("Something went wrong submitting the form. Please try again or email us directly.");
+    }
+  });
+</script>
+</body>
+</html>

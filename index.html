@@ -5,35 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GrowGigs — Local SEO, PPC Ads & Online Reputation Management</title>
 <meta name="description" content="GrowGigs helps local businesses rank higher, run profitable ad campaigns, and clean up their online reputation — including review removal on Google, Trustpilot, Glassdoor and Yelp, on a pay-per-removal basis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #232323;
-    --muted: #5f5f5f;
+    --ink: #0f1a14;
+    --muted: #5c6b62;
     --bg: #ffffff;
-    --bg-soft: #f6f8f6;
+    --bg-soft: #f5faf6;
     --card: #ffffff;
-    --border: #e4e8e3;
+    --border: #e5ece6;
     --green-light: #8cc63f;
     --green: #159f4a;
-    --teal: #4fc7c3;
+    --green-dark: #0d7a38;
+    --teal: #14b8a6;
+    --shadow: 0 1px 2px rgba(16,24,20,0.04), 0 12px 32px -12px rgba(16,24,20,0.10);
+    --shadow-lg: 0 4px 8px rgba(16,24,20,0.04), 0 24px 48px -16px rgba(16,24,20,0.16);
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     background: var(--bg);
     color: var(--ink);
     line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; }
   .wrap {
-    max-width: 1080px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 24px;
+  }
+  .grad-text {
+    background: linear-gradient(90deg, var(--green) 0%, var(--teal) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--green-dark);
+    font-weight: 700;
+    background: rgba(21,159,74,0.09);
+    border: 1px solid rgba(21,159,74,0.16);
+    padding: 7px 14px;
+    border-radius: 999px;
+    margin-bottom: 22px;
   }
 
   header {
     border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    z-index: 10;
   }
   .nav {
     display: flex;
@@ -44,9 +77,10 @@
   .brand {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 1.3rem;
-    font-weight: 700;
+    gap: 9px;
+    font-size: 1.28rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
     text-decoration: none;
     color: var(--ink);
   }
@@ -54,76 +88,178 @@
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 30px;
   }
   .nav-links a {
     text-decoration: none;
     color: var(--muted);
     font-size: 0.95rem;
     font-weight: 500;
+    transition: color 0.15s;
   }
   .nav-links a:hover { color: var(--ink); }
+
   .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: var(--green);
     color: #fff;
     border: none;
-    border-radius: 8px;
-    padding: 12px 22px;
+    border-radius: 10px;
+    padding: 13px 22px;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
+    transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 1px 2px rgba(16,24,20,0.06);
   }
-  .btn:hover { background: #0f7d3a; }
+  .btn:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: var(--shadow); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .btn-outline:hover { border-color: var(--green); transform: translateY(-1px); }
+  header .btn { padding: 10px 18px; font-size: 0.9rem; }
 
   .hero {
-    padding: 88px 0 72px;
-    background: linear-gradient(180deg, var(--bg-soft), var(--bg) 70%);
+    position: relative;
+    padding: 96px 0 80px;
+    overflow: hidden;
   }
-  .eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 13px;
-    color: var(--green);
-    font-weight: 700;
-    margin-bottom: 14px;
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: -180px;
+    width: 640px;
+    height: 640px;
+    background: radial-gradient(circle, rgba(20,184,166,0.14), rgba(21,159,74,0.05) 60%, transparent 72%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: center;
   }
   h1 {
-    font-size: 2.6rem;
-    line-height: 1.2;
-    margin: 0 0 20px;
-    max-width: 20ch;
+    font-size: 3.1rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    margin: 0 0 22px;
   }
   .hero .sub {
     font-size: 1.15rem;
     color: var(--muted);
-    max-width: 58ch;
-    margin: 0 0 32px;
+    max-width: 52ch;
+    margin: 0 0 28px;
   }
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 34px;
+    display: grid;
+    gap: 12px;
+  }
+  .checklist li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.98rem;
+    font-weight: 500;
+  }
+  .checklist svg { flex-shrink: 0; color: var(--green); }
   .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-  .btn-outline {
-    display: inline-block;
-    border: 1px solid var(--border);
-    color: var(--ink);
-    border-radius: 8px;
-    padding: 12px 22px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .btn-outline:hover { border-color: var(--green); }
 
-  section { padding: 72px 0; }
+  /* hero visual mockup */
+  .hero-visual { position: relative; height: 420px; }
+  .mock-card {
+    position: absolute;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    padding: 18px;
+  }
+  .mock-review {
+    top: 10px;
+    left: 0;
+    width: 300px;
+  }
+  .mock-review .row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .mock-avatar {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: #f0b429; color: #fff; font-weight: 700; font-size: 0.85rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .mock-review .name { font-weight: 700; font-size: 0.9rem; }
+  .mock-review .stars { color: #f0b429; font-size: 0.75rem; }
+  .mock-review .time { margin-left: auto; font-size: 0.75rem; color: var(--muted); }
+  .mock-review p { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+  .mock-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.78rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;
+  }
+  .mock-tag.red { background: #fdecec; color: #c0392b; }
+  .mock-tag.green { background: #e7f7ee; color: var(--green-dark); }
+
+  .mock-removed {
+    bottom: 60px;
+    left: 40px;
+    width: 260px;
+    animation: float 4s ease-in-out infinite;
+  }
+  .mock-removed .row { display: flex; align-items: center; gap: 10px; }
+  .mock-removed .check-circle {
+    width: 30px; height: 30px; border-radius: 50%; background: var(--green);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .mock-removed strong { font-size: 0.9rem; display: block; }
+  .mock-removed span { font-size: 0.78rem; color: var(--muted); }
+
+  .mock-rank {
+    top: 40px;
+    right: 0;
+    width: 170px;
+    text-align: center;
+    animation: float 5s ease-in-out infinite 0.5s;
+  }
+  .mock-rank .label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; margin-bottom: 6px; }
+  .mock-rank .num { font-size: 2.2rem; font-weight: 800; color: var(--green-dark); line-height: 1; }
+  .mock-rank .delta { font-size: 0.78rem; color: var(--green-dark); font-weight: 600; margin-top: 4px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  section { padding: 84px 0; }
+  .section-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
+  .section-head .badge { margin-bottom: 18px; }
   h2 {
-    font-size: 1.9rem;
-    margin: 0 0 12px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    margin: 0 0 14px;
   }
   .section-sub {
     color: var(--muted);
-    max-width: 60ch;
-    margin: 0 0 44px;
-    font-size: 1.02rem;
+    font-size: 1.05rem;
+    margin: 0;
   }
 
   .services-grid {
@@ -134,89 +270,120 @@
   .service-card {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 30px;
+    border-radius: 16px;
+    padding: 32px;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
+  .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .service-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 18px;
-    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
   .service-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.18rem;
+    font-weight: 700;
     margin: 0 0 10px;
+    letter-spacing: -0.01em;
   }
   .service-card p {
     color: var(--muted);
     font-size: 0.95rem;
-    margin: 0 0 14px;
+    margin: 0 0 16px;
   }
   .service-card ul {
     margin: 0;
-    padding-left: 18px;
-    color: var(--muted);
-    font-size: 0.9rem;
+    padding: 0;
+    list-style: none;
+    color: var(--ink);
+    font-size: 0.89rem;
+    display: grid;
+    gap: 9px;
   }
-  .service-card ul li { margin-bottom: 6px; }
+  .service-card ul li { display: flex; align-items: center; gap: 8px; }
+  .service-card ul svg { flex-shrink: 0; color: var(--green); }
   .pill {
     display: inline-block;
-    margin-top: 16px;
-    font-size: 0.8rem;
+    margin-top: 18px;
+    font-size: 0.78rem;
     font-weight: 700;
-    color: var(--green);
+    color: var(--green-dark);
     background: rgba(21,159,74,0.1);
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 999px;
   }
 
-  .why {
+  /* Case studies */
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .case-card {
+    border: 1.5px dashed var(--border);
+    border-radius: 16px;
+    padding: 34px 28px;
+    text-align: center;
     background: var(--bg-soft);
   }
-  .why-grid {
+  .case-card .case-icon {
+    width: 46px; height: 46px; border-radius: 12px;
+    background: rgba(20,184,166,0.12); color: var(--teal);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 18px;
+  }
+  .case-card h3 { font-size: 1.02rem; font-weight: 700; margin: 0 0 8px; color: var(--muted); }
+  .case-card p { font-size: 0.88rem; color: var(--muted); margin: 0; opacity: 0.85; }
+
+  /* Why us */
+  .why { background: var(--bg-soft); }
+  .why-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
   .why-item {
     display: flex;
-    gap: 14px;
+    gap: 16px;
     align-items: flex-start;
+    padding: 30px 32px;
+    border-bottom: 1px solid var(--border);
   }
-  .why-item .check {
+  .why-item:nth-child(odd) { border-right: 1px solid var(--border); }
+  .why-item:nth-last-child(-n+2) { border-bottom: none; }
+  .why-item .icon-sq {
     flex-shrink: 0;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: var(--green);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    font-weight: 700;
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(21,159,74,0.1); color: var(--green-dark);
+    display: flex; align-items: center; justify-content: center;
   }
-  .why-item h4 { margin: 0 0 4px; font-size: 1rem; }
+  .why-item h4 { margin: 0 0 5px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em; }
   .why-item p { margin: 0; color: var(--muted); font-size: 0.92rem; }
 
   .contact-card {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 40px;
+    border-radius: 20px;
+    padding: 44px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 44px;
+    box-shadow: var(--shadow);
   }
   .contact-info h2 { margin-bottom: 14px; }
   .contact-info p { color: var(--muted); }
   .contact-info .method {
-    margin-top: 24px;
+    margin-top: 26px;
     font-size: 0.95rem;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
   }
   .contact-info .method strong { display: block; margin-bottom: 2px; }
 
@@ -229,9 +396,9 @@
   }
   input, select, textarea {
     width: 100%;
-    padding: 10px 12px;
+    padding: 11px 13px;
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 0.95rem;
     background: #fff;
     color: var(--ink);
@@ -259,12 +426,22 @@
     font-size: 0.85rem;
   }
 
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-visual { height: 320px; margin-top: 20px; }
+  }
+
   @media (max-width: 760px) {
-    h1 { font-size: 2rem; }
-    .services-grid { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: 1fr; }
-    .contact-card { grid-template-columns: 1fr; padding: 26px; }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.7rem; }
+    .services-grid, .case-grid { grid-template-columns: 1fr; }
+    .why-card { grid-template-columns: 1fr; }
+    .why-item:nth-child(odd) { border-right: none; }
+    .why-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+    .why-item:last-child { border-bottom: none; }
+    .contact-card { grid-template-columns: 1fr; padding: 28px; }
     .nav-links { display: none; }
+    .mock-rank { display: none; }
   }
 </style>
 </head>
@@ -273,7 +450,7 @@
 <header>
   <div class="wrap nav">
     <a href="#" class="brand">
-      <svg width="30" height="34" viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="28" height="32" viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M28,64 C10,56 2,42 14,20 C22,34 26,48 28,64 Z" fill="#8cc63f"/>
         <path d="M28,64 C18,48 18,22 28,4 C38,22 38,48 28,64 Z" fill="#159f4a"/>
         <path d="M28,64 C30,44 36,22 46,10 C50,32 46,50 28,64 Z" fill="#4fc7c3"/>
@@ -282,6 +459,7 @@
     </a>
     <nav class="nav-links">
       <a href="#services">Services</a>
+      <a href="#case-studies">Case Studies</a>
       <a href="#why">Why Us</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -290,58 +468,111 @@
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Local Growth Marketing</div>
-    <h1>More visibility. Fewer bad reviews. More customers.</h1>
-    <p class="sub">
-      GrowGigs helps local businesses rank higher in search, run ad campaigns that
-      actually convert, and clean up a damaged online reputation — including
-      negative review removal on Google, Trustpilot, Glassdoor, and Yelp, billed
-      only on the reviews we actually get removed.
-    </p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn">Get a Free Consultation</a>
-      <a href="#services" class="btn-outline">See Our Services</a>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badge">Local SEO · PPC · Reputation Management</div>
+      <h1>More visibility. Fewer bad reviews. <span class="grad-text">More customers.</span></h1>
+      <p class="sub">
+        GrowGigs helps local businesses rank higher in search, run ad campaigns that
+        actually convert, and clean up a damaged online reputation — including
+        negative review removal on Google, Trustpilot, Glassdoor, and Yelp.
+      </p>
+      <ul class="checklist">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Pay-per-removal reputation management — no upfront risk</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> SEO &amp; ads built for local map-pack visibility</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Direct communication — no account-manager layers</li>
+      </ul>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn">Get a Free Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#services" class="btn-outline">See Our Services</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="mock-card mock-review">
+        <div class="row">
+          <div class="mock-avatar">J</div>
+          <div>
+            <div class="name">Jordan M.</div>
+            <div class="stars">★☆☆☆☆</div>
+          </div>
+          <div class="time">3d ago</div>
+        </div>
+        <p>"Wouldn't recommend, had a bad experience with the ­team..."</p>
+        <span class="mock-tag red">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Flagged for removal
+        </span>
+      </div>
+
+      <div class="mock-card mock-removed">
+        <div class="row">
+          <div class="check-circle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <strong>Removed from Google</strong>
+            <span>Confirmed 2 hours later</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mock-card mock-rank">
+        <div class="label">Local Pack Rank</div>
+        <div class="num">#1</div>
+        <div class="delta">▲ up from #7</div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="services">
   <div class="wrap">
-    <h2>What we do</h2>
-    <p class="section-sub">Three services, one goal: more of the right customers finding — and trusting — your business.</p>
+    <div class="section-head">
+      <div class="badge">What We Do</div>
+      <h2>Three services, one goal</h2>
+      <p class="section-sub">More of the right customers finding — and trusting — your business.</p>
+    </div>
     <div class="services-grid">
 
       <div class="service-card">
-        <div class="service-icon" style="background: rgba(140,198,63,0.15);">📍</div>
+        <div class="service-icon" style="background: rgba(140,198,63,0.15); color:#5a8f22;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
         <h3>Local SEO</h3>
         <p>Get found by customers searching for what you do, right where you do it.</p>
         <ul>
-          <li>Google Business Profile optimization</li>
-          <li>Local map pack &amp; search rankings</li>
-          <li>On-page &amp; citation SEO</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Google Business Profile optimization</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Local map pack &amp; search rankings</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> On-page &amp; citation SEO</li>
         </ul>
       </div>
 
       <div class="service-card">
-        <div class="service-icon" style="background: rgba(21,159,74,0.15);">📈</div>
+        <div class="service-icon" style="background: rgba(21,159,74,0.15); color: var(--green-dark);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
         <h3>PPC Ads</h3>
         <p>Paid campaigns built around conversions, not just clicks.</p>
         <ul>
-          <li>Google &amp; social ad management</li>
-          <li>Landing pages that convert</li>
-          <li>Transparent spend &amp; ROI reporting</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Google &amp; social ad management</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Landing pages that convert</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Transparent spend &amp; ROI reporting</li>
         </ul>
       </div>
 
       <div class="service-card">
-        <div class="service-icon" style="background: rgba(79,199,195,0.15);">🛡️</div>
+        <div class="service-icon" style="background: rgba(20,184,166,0.15); color: var(--teal);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
         <h3>Online Reputation Management</h3>
         <p>We remove the reviews dragging your business down — across every major platform.</p>
         <ul>
-          <li>Google, Trustpilot, Glassdoor &amp; Yelp</li>
-          <li>Other review platforms on request</li>
-          <li>Pay-per-removal — no upfront risk</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Google, Trustpilot, Glassdoor &amp; Yelp</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Other review platforms on request</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Pay-per-removal — no upfront risk</li>
         </ul>
         <span class="pill">Pay only for removals that succeed</span>
       </div>
@@ -350,34 +581,70 @@
   </div>
 </section>
 
+<section id="case-studies">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="badge">Results</div>
+      <h2>Client case studies</h2>
+      <p class="section-sub">Real client wins, coming soon — this section fills in as results come in.</p>
+    </div>
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="case-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Case study coming soon</h3>
+        <p>Local SEO results for a client currently in progress.</p>
+      </div>
+      <div class="case-card">
+        <div class="case-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Case study coming soon</h3>
+        <p>PPC campaign results for a client currently in progress.</p>
+      </div>
+      <div class="case-card">
+        <div class="case-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Case study coming soon</h3>
+        <p>Reputation management results for a client currently in progress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="why" class="why">
   <div class="wrap">
-    <h2>Why local businesses work with GrowGigs</h2>
-    <p class="section-sub">No long contracts, no vague reporting, no charging you for work that didn't happen.</p>
-    <div class="why-grid">
+    <div class="section-head">
+      <div class="badge">Why GrowGigs</div>
+      <h2>Why local businesses work with us</h2>
+      <p class="section-sub">No long contracts, no vague reporting, no charging you for work that didn't happen.</p>
+    </div>
+    <div class="why-card">
       <div class="why-item">
-        <div class="check">✓</div>
+        <div class="icon-sq"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div>
           <h4>Pay-per-removal reputation management</h4>
           <p>You're only billed for reviews we actually get taken down — not for attempts.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="check">✓</div>
+        <div class="icon-sq"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <div>
           <h4>Built for local visibility</h4>
           <p>SEO and ads work aimed squarely at your map pack and local search rankings, not vanity traffic.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="check">✓</div>
+        <div class="icon-sq"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div>
           <h4>Straight answers, no account-manager layers</h4>
           <p>You talk directly with the people doing the work.</p>
         </div>
       </div>
       <div class="why-item">
-        <div class="check">✓</div>
+        <div class="icon-sq"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <div>
           <h4>Every major review platform covered</h4>
           <p>Google, Trustpilot, Glassdoor, Yelp — and others on request.</p>
@@ -391,6 +658,7 @@
   <div class="wrap">
     <div class="contact-card">
       <div class="contact-info">
+        <div class="badge">Get In Touch</div>
         <h2>Let's talk about your business</h2>
         <p>Tell us a bit about what you need — local SEO, PPC, review removal, or all three — and we'll get back to you with next steps.</p>
         <div class="method">
@@ -428,7 +696,9 @@
               <label for="message">Anything else we should know?</label>
               <textarea id="message" name="message"></textarea>
             </div>
-            <button type="submit" class="btn">Get a Free Consultation</button>
+            <button type="submit" class="btn">Get a Free Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
           </form>
         </div>
         <div id="success" class="success">

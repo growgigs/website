@@ -8,448 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #0f1a14;
-    --muted: #5c6b62;
-    --bg: #ffffff;
-    --bg-soft: #f5faf6;
-    --card: #ffffff;
-    --border: #e5ece6;
-    --green-light: #8cc63f;
-    --green: #159f4a;
-    --green-dark: #0d7a38;
-    --teal: #14b8a6;
-    --shadow: 0 1px 2px rgba(16,24,20,0.04), 0 12px 32px -12px rgba(16,24,20,0.10);
-    --shadow-lg: 0 4px 8px rgba(16,24,20,0.04), 0 24px 48px -16px rgba(16,24,20,0.16);
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: inherit; }
-  .wrap {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  .grad-text {
-    background: linear-gradient(90deg, var(--green) 0%, var(--teal) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 12px;
-    color: var(--green-dark);
-    font-weight: 700;
-    background: rgba(21,159,74,0.09);
-    border: 1px solid rgba(21,159,74,0.16);
-    padding: 7px 14px;
-    border-radius: 999px;
-    margin-bottom: 22px;
-  }
-
-  header {
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(10px);
-    z-index: 10;
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 0;
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 1.28rem;
-    font-weight: 800;
-    letter-spacing: -0.01em;
-    text-decoration: none;
-    color: var(--ink);
-  }
-  .brand svg { display: block; }
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: var(--muted);
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: color 0.15s;
-  }
-  .nav-links a:hover { color: var(--ink); }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--green);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 13px 22px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
-    box-shadow: 0 1px 2px rgba(16,24,20,0.06);
-  }
-  .btn:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: var(--shadow); }
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid var(--border);
-    background: #fff;
-    color: var(--ink);
-    border-radius: 10px;
-    padding: 13px 22px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: border-color 0.15s, transform 0.15s;
-  }
-  .btn-outline:hover { border-color: var(--green); transform: translateY(-1px); }
-  header .btn { padding: 10px 18px; font-size: 0.9rem; }
-
-  .hero {
-    position: relative;
-    padding: 96px 0 80px;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: -160px;
-    right: -180px;
-    width: 640px;
-    height: 640px;
-    background: radial-gradient(circle, rgba(20,184,166,0.14), rgba(21,159,74,0.05) 60%, transparent 72%);
-    border-radius: 50%;
-    z-index: -1;
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 56px;
-    align-items: center;
-  }
-  h1 {
-    font-size: 3.1rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    line-height: 1.12;
-    margin: 0 0 22px;
-  }
-  .hero .sub {
-    font-size: 1.15rem;
-    color: var(--muted);
-    max-width: 52ch;
-    margin: 0 0 28px;
-  }
-  .checklist {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 34px;
-    display: grid;
-    gap: 12px;
-  }
-  .checklist li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.98rem;
-    font-weight: 500;
-  }
-  .checklist svg { flex-shrink: 0; color: var(--green); }
-  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-
-  /* hero visual mockup */
-  .hero-visual { position: relative; height: 420px; }
-  .mock-card {
-    position: absolute;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: var(--shadow-lg);
-    padding: 18px;
-  }
-  .mock-review {
-    top: 10px;
-    left: 0;
-    width: 300px;
-  }
-  .mock-review .row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-  .mock-avatar {
-    width: 34px; height: 34px; border-radius: 50%;
-    background: #f0b429; color: #fff; font-weight: 700; font-size: 0.85rem;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .mock-review .name { font-weight: 700; font-size: 0.9rem; }
-  .mock-review .stars { color: #f0b429; font-size: 0.75rem; }
-  .mock-review .time { margin-left: auto; font-size: 0.75rem; color: var(--muted); }
-  .mock-review p { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
-  .mock-tag {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 0.78rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;
-  }
-  .mock-tag.red { background: #fdecec; color: #c0392b; }
-  .mock-tag.green { background: #e7f7ee; color: var(--green-dark); }
-
-  .mock-removed {
-    bottom: 60px;
-    left: 40px;
-    width: 260px;
-    animation: float 4s ease-in-out infinite;
-  }
-  .mock-removed .row { display: flex; align-items: center; gap: 10px; }
-  .mock-removed .check-circle {
-    width: 30px; height: 30px; border-radius: 50%; background: var(--green);
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  }
-  .mock-removed strong { font-size: 0.9rem; display: block; }
-  .mock-removed span { font-size: 0.78rem; color: var(--muted); }
-
-  .mock-rank {
-    top: 40px;
-    right: 0;
-    width: 170px;
-    text-align: center;
-    animation: float 5s ease-in-out infinite 0.5s;
-  }
-  .mock-rank .label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; margin-bottom: 6px; }
-  .mock-rank .num { font-size: 2.2rem; font-weight: 800; color: var(--green-dark); line-height: 1; }
-  .mock-rank .delta { font-size: 0.78rem; color: var(--green-dark); font-weight: 600; margin-top: 4px; }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-
-  section { padding: 84px 0; }
-  .section-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
-  .section-head .badge { margin-bottom: 18px; }
-  h2 {
-    font-size: 2.1rem;
-    font-weight: 800;
-    letter-spacing: -0.015em;
-    margin: 0 0 14px;
-  }
-  .section-sub {
-    color: var(--muted);
-    font-size: 1.05rem;
-    margin: 0;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 32px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-  .service-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .service-card h3 {
-    font-size: 1.18rem;
-    font-weight: 700;
-    margin: 0 0 10px;
-    letter-spacing: -0.01em;
-  }
-  .service-card p {
-    color: var(--muted);
-    font-size: 0.95rem;
-    margin: 0 0 16px;
-  }
-  .service-card ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: var(--ink);
-    font-size: 0.89rem;
-    display: grid;
-    gap: 9px;
-  }
-  .service-card ul li { display: flex; align-items: center; gap: 8px; }
-  .service-card ul svg { flex-shrink: 0; color: var(--green); }
-  .pill {
-    display: inline-block;
-    margin-top: 18px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--green-dark);
-    background: rgba(21,159,74,0.1);
-    padding: 6px 12px;
-    border-radius: 999px;
-  }
-
-  /* Case studies */
-  .case-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .case-card {
-    border: 1.5px dashed var(--border);
-    border-radius: 16px;
-    padding: 34px 28px;
-    text-align: center;
-    background: var(--bg-soft);
-  }
-  .case-card .case-icon {
-    width: 46px; height: 46px; border-radius: 12px;
-    background: rgba(20,184,166,0.12); color: var(--teal);
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 18px;
-  }
-  .case-card h3 { font-size: 1.02rem; font-weight: 700; margin: 0 0 8px; color: var(--muted); }
-  .case-card p { font-size: 0.88rem; color: var(--muted); margin: 0; opacity: 0.85; }
-
-  /* Why us */
-  .why { background: var(--bg-soft); }
-  .why-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .why-item {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 30px 32px;
-    border-bottom: 1px solid var(--border);
-  }
-  .why-item:nth-child(odd) { border-right: 1px solid var(--border); }
-  .why-item:nth-last-child(-n+2) { border-bottom: none; }
-  .why-item .icon-sq {
-    flex-shrink: 0;
-    width: 40px; height: 40px; border-radius: 10px;
-    background: rgba(21,159,74,0.1); color: var(--green-dark);
-    display: flex; align-items: center; justify-content: center;
-  }
-  .why-item h4 { margin: 0 0 5px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em; }
-  .why-item p { margin: 0; color: var(--muted); font-size: 0.92rem; }
-
-  .contact-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 44px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 44px;
-    box-shadow: var(--shadow);
-  }
-  .contact-info h2 { margin-bottom: 14px; }
-  .contact-info p { color: var(--muted); }
-  .contact-info .method {
-    margin-top: 26px;
-    font-size: 0.95rem;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-  }
-  .contact-info .method strong { display: block; margin-bottom: 2px; }
-
-  form { display: grid; gap: 14px; }
-  label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 4px;
-  }
-  input, select, textarea {
-    width: 100%;
-    padding: 11px 13px;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    font-size: 0.95rem;
-    background: #fff;
-    color: var(--ink);
-    font-family: inherit;
-  }
-  textarea { resize: vertical; min-height: 90px; }
-  input:focus, select:focus, textarea:focus {
-    outline: 2px solid var(--green);
-    outline-offset: 1px;
-  }
-  .success {
-    display: none;
-    text-align: center;
-    padding: 30px 10px;
-  }
-  .success.shown { display: block; }
-  .success h3 { margin-bottom: 6px; }
-  .success p { color: var(--muted); }
-
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 32px 0;
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-
-  @media (max-width: 900px) {
-    .hero-grid { grid-template-columns: 1fr; }
-    .hero-visual { height: 320px; margin-top: 20px; }
-  }
-
-  @media (max-width: 760px) {
-    h1 { font-size: 2.1rem; }
-    h2 { font-size: 1.7rem; }
-    .services-grid, .case-grid { grid-template-columns: 1fr; }
-    .why-card { grid-template-columns: 1fr; }
-    .why-item:nth-child(odd) { border-right: none; }
-    .why-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
-    .why-item:last-child { border-bottom: none; }
-    .contact-card { grid-template-columns: 1fr; padding: 28px; }
-    .nav-links { display: none; }
-    .mock-rank { display: none; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a href="#" class="brand">
+    <a href="index.html" class="brand">
       <svg width="28" height="32" viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M28,64 C10,56 2,42 14,20 C22,34 26,48 28,64 Z" fill="#8cc63f"/>
         <path d="M28,64 C18,48 18,22 28,4 C38,22 38,48 28,64 Z" fill="#159f4a"/>
@@ -548,6 +113,9 @@
           <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Local map pack &amp; search rankings</li>
           <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> On-page &amp; citation SEO</li>
         </ul>
+        <a href="seo.html" class="learn-more">Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
 
       <div class="service-card">
@@ -561,6 +129,9 @@
           <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Landing pages that convert</li>
           <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Transparent spend &amp; ROI reporting</li>
         </ul>
+        <a href="ppc.html" class="learn-more">Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
 
       <div class="service-card">
@@ -575,6 +146,10 @@
           <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Pay-per-removal — no upfront risk</li>
         </ul>
         <span class="pill">Pay only for removals that succeed</span>
+        <br>
+        <a href="reputation.html" class="learn-more">Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
 
     </div>
@@ -586,30 +161,64 @@
     <div class="section-head">
       <div class="badge">Results</div>
       <h2>Client case studies</h2>
-      <p class="section-sub">Real client wins, coming soon — this section fills in as results come in.</p>
+      <p class="section-sub">A few of the local and travel businesses we've helped grow.</p>
     </div>
     <div class="case-grid">
+
       <div class="case-card">
-        <div class="case-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <div class="case-top">
+          <div>
+            <div class="client-name">Zoobzi</div>
+            <div class="client-loc">New York, NY</div>
+          </div>
+          <span class="service-tag">Local SEO</span>
         </div>
-        <h3>Case study coming soon</h3>
-        <p>Local SEO results for a client currently in progress.</p>
+        <div class="metric">
+          <span class="num">411+</span>
+          <span class="metric-label">calls/month — up from ~200</span>
+        </div>
+        <p class="desc">A Google Business Profile overhaul and map-pack targeting took Zoobzi from roughly 200 to 411+ inbound calls a month in one of the most competitive local markets in the US.</p>
+        <a href="https://zoobzibnyc.com" target="_blank" rel="noopener" class="visit-link">Visit site
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
       </div>
+
       <div class="case-card">
-        <div class="case-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <div class="case-top">
+          <div>
+            <div class="client-name">Dubai Desert Safari</div>
+            <div class="client-loc">Dubai, UAE</div>
+          </div>
+          <span class="service-tag">PPC Ads</span>
         </div>
-        <h3>Case study coming soon</h3>
-        <p>PPC campaign results for a client currently in progress.</p>
+        <div class="metric">
+          <span class="num">+165%</span>
+          <span class="metric-label">booking inquiries</span>
+        </div>
+        <p class="desc">Restructured Google Ads campaigns and conversion-focused landing pages drove a sharp jump in qualified booking inquiries for Dubai's desert safari market.</p>
+        <a href="https://www.dubaidesertsafari.co" target="_blank" rel="noopener" class="visit-link">Visit site
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
       </div>
+
       <div class="case-card">
-        <div class="case-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <div class="case-top">
+          <div>
+            <div class="client-name">Morocco Live Trips</div>
+            <div class="client-loc">Marrakech, Morocco</div>
+          </div>
+          <span class="service-tag">Reputation</span>
         </div>
-        <h3>Case study coming soon</h3>
-        <p>Reputation management results for a client currently in progress.</p>
+        <div class="metric">
+          <span class="num">4.9★</span>
+          <span class="metric-label">average rating — up from 4.2★</span>
+        </div>
+        <p class="desc">Ongoing review management and negative-review removal lifted Morocco Live Trips' average rating and online trust signals across Google and Trustpilot.</p>
+        <a href="https://moroccolivetrips.com" target="_blank" rel="noopener" class="visit-link">Visit site
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
       </div>
+
     </div>
   </div>
 </section>

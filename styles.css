@@ -357,6 +357,36 @@ h2 {
 }
 .case-card .visit-link:hover { text-decoration: underline; }
 
+.more-results-head {
+  text-align: center;
+  max-width: 640px;
+  margin: 64px auto 32px;
+}
+.more-results-head h3 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.more-results-head p { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.mini-case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.mini-case {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.mini-case:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.mini-case .service-tag {
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  background: rgba(20,184,166,0.12); color: var(--teal);
+  padding: 5px 9px; border-radius: 999px; white-space: nowrap;
+  display: inline-block; margin-bottom: 14px;
+}
+.mini-case .mini-metric { font-size: 1.28rem; font-weight: 800; color: var(--green-dark); line-height: 1.2; }
+.mini-case .mini-sub { display: block; font-size: 0.78rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
+.mini-case p { color: var(--muted); font-size: 0.88rem; margin: 10px 0 0; }
+
 /* Why us */
 .why { background: var(--bg-soft); }
 .why-card {
@@ -503,12 +533,13 @@ footer {
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { height: 320px; margin-top: 20px; }
+  .mini-case-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 760px) {
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.7rem; }
-  .case-grid, .feature-grid, .steps { grid-template-columns: 1fr; }
+  .case-grid, .feature-grid, .steps, .mini-case-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .service-card { border-right: none; border-bottom: 1px solid var(--border); }
   .service-card:last-child { border-bottom: none; }

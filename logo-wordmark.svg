@@ -1,0 +1,14 @@
+<svg width="560" height="140" viewBox="0 0 560 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="growgigsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#159f4a"/>
+<stop offset="100%" stop-color="#14b8a6"/>
+</linearGradient>
+</defs>
+<g transform="translate(20,20) scale(1.6)">
+<path d="M28,64 C10,56 2,42 14,20 C22,34 26,48 28,64 Z" fill="#8cc63f"/>
+<path d="M28,64 C18,48 18,22 28,4 C38,22 38,48 28,64 Z" fill="#159f4a"/>
+<path d="M28,64 C30,44 36,22 46,10 C50,32 46,50 28,64 Z" fill="#4fc7c3"/>
+</g>
+<text x="130" y="90" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1" fill="url(#growgigsGrad)">GrowGigs</text>
+</svg>

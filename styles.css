@@ -540,6 +540,45 @@ h2 {
   margin: 0 0 20px;
 }
 
+/* Blog */
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.article .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+.article h1 { margin: 0 0 18px; }
+.article h2 { margin: 40px 0 14px; font-size: 1.4rem; }
+.article h3 { margin: 28px 0 10px; font-size: 1.15rem; }
+.article p { margin: 0 0 18px; color: var(--ink); }
+.article ul, .article ol { margin: 0 0 18px; padding-left: 22px; }
+.article li { margin-bottom: 8px; }
+.article .lede { font-size: 1.1rem; color: var(--muted); margin-bottom: 32px; }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.blog-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.blog-card:hover { border-color: var(--green); transform: translateY(-2px); }
+.blog-card h3 { margin: 0 0 10px; font-size: 1.1rem; }
+.blog-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+@media (max-width: 860px) {
+  .blog-grid { grid-template-columns: 1fr; }
+}
+
 .contact-card {
   background: var(--card);
   border: 1px solid var(--border);

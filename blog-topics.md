@@ -7,8 +7,8 @@ then checks it off here with the filename it published to.
 Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 
 ## Review Removal (reputation.html)
-- [ ] How Long Does It Take to Remove a Google Review? | reputation.html | Realistic timelines by case type, no false promises.
-- [ ] What Happens After You Report a Google Review? | reputation.html | Walk through Google's review process end to end.
+- [x] How Long Does It Take to Remove a Google Review? | reputation.html | Realistic timelines by case type, no false promises. | published as blog-review-removal-timeline.html
+- [x] What Happens After You Report a Google Review? | reputation.html | Walk through Google's review process end to end. | published as blog-what-happens-after-reporting-review.html
 - [ ] Why Did Google Reject My Review Removal Request? | reputation.html | Common rejection reasons and what to do next.
 - [ ] How to Handle a One-Star Review From Someone Who Was Never a Customer | reputation.html | Non-customer review policy, evidence to gather.
 - [ ] Signs a Google Review Is Fake | reputation.html | Practical checklist for spotting fake reviews.

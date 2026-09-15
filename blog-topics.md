@@ -9,8 +9,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 ## Review Removal (reputation.html)
 - [x] How Long Does It Take to Remove a Google Review? | reputation.html | Realistic timelines by case type, no false promises. | published as blog-review-removal-timeline.html
 - [x] What Happens After You Report a Google Review? | reputation.html | Walk through Google's review process end to end. | published as blog-what-happens-after-reporting-review.html
-- [ ] Why Did Google Reject My Review Removal Request? | reputation.html | Common rejection reasons and what to do next.
-- [ ] How to Handle a One-Star Review From Someone Who Was Never a Customer | reputation.html | Non-customer review policy, evidence to gather.
+- [x] Why Did Google Reject My Review Removal Request? | reputation.html | Common rejection reasons and what to do next. | published as blog-why-review-removal-rejected.html
+- [x] How to Handle a One-Star Review From Someone Who Was Never a Customer | reputation.html | Non-customer review policy, evidence to gather. | published as blog-one-star-review-non-customer.html
 - [ ] Signs a Google Review Is Fake | reputation.html | Practical checklist for spotting fake reviews.
 - [ ] How to Respond to a Negative Review the Right Way | reputation.html | For reviews that don't qualify for removal.
 - [ ] Trustpilot Review Removal: How It's Different From Google | reputation.html | Platform-specific policy differences.

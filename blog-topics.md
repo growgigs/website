@@ -15,8 +15,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Respond to a Negative Review the Right Way | reputation.html | For reviews that don't qualify for removal. | published as blog-how-to-respond-negative-review.html
 - [x] Trustpilot Review Removal: How It's Different From Google | reputation.html | Platform-specific policy differences. | published as blog-trustpilot-review-removal.html
 - [x] Yelp Review Removal: What's Actually Possible | reputation.html | Yelp's filter system vs. removal requests. | published as blog-yelp-review-removal.html
-- [ ] Can You Remove a Google Review After Responding to It? | reputation.html | Whether replying affects eligibility.
-- [ ] How Many Bad Reviews Does It Take to Hurt Your Business? | reputation.html | Ratings/conversion impact, sourced conservatively.
+- [x] Can You Remove a Google Review After Responding to It? | reputation.html | Whether replying affects eligibility. | published as blog-remove-review-after-responding.html
+- [x] How Many Bad Reviews Does It Take to Hurt Your Business? | reputation.html | Ratings/conversion impact, sourced conservatively. | published as blog-how-many-bad-reviews-hurt-business.html
 
 ## Content Takedowns (takedowns.html)
 - [ ] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting.

@@ -19,8 +19,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Many Bad Reviews Does It Take to Hurt Your Business? | reputation.html | Ratings/conversion impact, sourced conservatively. | published as blog-how-many-bad-reviews-hurt-business.html
 
 ## Content Takedowns (takedowns.html)
-- [ ] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting.
-- [ ] What Counts as Online Defamation Against a Business? | takedowns.html | Legal definition vs. just a bad opinion.
+- [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
+- [x] What Counts as Online Defamation Against a Business? | takedowns.html | Legal definition vs. just a bad opinion. | published as blog-online-defamation-business.html
 - [ ] How to Report Cyberbullying Content About Your Business | takedowns.html | Platform reporting tools plus escalation.
 - [ ] Trademark Infringement vs. Copyright Infringement: What's the Difference | takedowns.html | Clarify which process applies when.
 - [ ] How to Find Who's Hosting Infringing Content | takedowns.html | WHOIS lookups, contacting hosts directly.

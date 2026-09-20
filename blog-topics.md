@@ -21,8 +21,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
 - [x] What Counts as Online Defamation Against a Business? | takedowns.html | Legal definition vs. just a bad opinion. | published as blog-online-defamation-business.html
-- [ ] How to Report Cyberbullying Content About Your Business | takedowns.html | Platform reporting tools plus escalation.
-- [ ] Trademark Infringement vs. Copyright Infringement: What's the Difference | takedowns.html | Clarify which process applies when.
+- [x] How to Report Cyberbullying Content About Your Business | takedowns.html | Platform reporting tools plus escalation. | published as blog-report-cyberbullying-business.html
+- [x] Trademark Infringement vs. Copyright Infringement: What's the Difference | takedowns.html | Clarify which process applies when. | published as blog-trademark-vs-copyright-infringement.html
 - [ ] How to Find Who's Hosting Infringing Content | takedowns.html | WHOIS lookups, contacting hosts directly.
 - [ ] What to Do When a Competitor Copies Your Website Content | takedowns.html | DMCA angle for scraped/copied text.
 - [ ] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints.

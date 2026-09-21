@@ -28,8 +28,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [ ] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints.
 
 ## Local SEO (seo.html)
-- [ ] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks.
-- [ ] Why Isn't My Business Showing Up in the Local Map Pack? | seo.html | Common ranking blockers.
+- [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
+- [x] Why Isn't My Business Showing Up in the Local Map Pack? | seo.html | Common ranking blockers. | published as blog-not-showing-local-map-pack.html
 - [ ] Local SEO Checklist for Small Businesses | seo.html | Condensed actionable checklist.
 - [ ] How Reviews Affect Your Local Search Ranking | seo.html | Ties review volume/recency to ranking factors.
 - [ ] NAP Consistency: Why It Matters for Local SEO | seo.html | Name/address/phone consistency across directories.

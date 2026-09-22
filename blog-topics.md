@@ -23,8 +23,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] What Counts as Online Defamation Against a Business? | takedowns.html | Legal definition vs. just a bad opinion. | published as blog-online-defamation-business.html
 - [x] How to Report Cyberbullying Content About Your Business | takedowns.html | Platform reporting tools plus escalation. | published as blog-report-cyberbullying-business.html
 - [x] Trademark Infringement vs. Copyright Infringement: What's the Difference | takedowns.html | Clarify which process applies when. | published as blog-trademark-vs-copyright-infringement.html
-- [ ] How to Find Who's Hosting Infringing Content | takedowns.html | WHOIS lookups, contacting hosts directly.
-- [ ] What to Do When a Competitor Copies Your Website Content | takedowns.html | DMCA angle for scraped/copied text.
+- [x] How to Find Who's Hosting Infringing Content | takedowns.html | WHOIS lookups, contacting hosts directly. | published as blog-find-hosting-infringing-content.html
+- [x] What to Do When a Competitor Copies Your Website Content | takedowns.html | DMCA angle for scraped/copied text. | published as blog-competitor-copies-website-content.html
 - [ ] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints.
 
 ## Local SEO (seo.html)

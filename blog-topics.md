@@ -25,12 +25,12 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Trademark Infringement vs. Copyright Infringement: What's the Difference | takedowns.html | Clarify which process applies when. | published as blog-trademark-vs-copyright-infringement.html
 - [x] How to Find Who's Hosting Infringing Content | takedowns.html | WHOIS lookups, contacting hosts directly. | published as blog-find-hosting-infringing-content.html
 - [x] What to Do When a Competitor Copies Your Website Content | takedowns.html | DMCA angle for scraped/copied text. | published as blog-competitor-copies-website-content.html
-- [ ] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints.
+- [x] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints. | published as blog-scam-website-impersonation-takedown.html
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
 - [x] Why Isn't My Business Showing Up in the Local Map Pack? | seo.html | Common ranking blockers. | published as blog-not-showing-local-map-pack.html
-- [ ] Local SEO Checklist for Small Businesses | seo.html | Condensed actionable checklist.
+- [x] Local SEO Checklist for Small Businesses | seo.html | Condensed actionable checklist. | published as blog-local-seo-checklist-small-business.html
 - [ ] How Reviews Affect Your Local Search Ranking | seo.html | Ties review volume/recency to ranking factors.
 - [ ] NAP Consistency: Why It Matters for Local SEO | seo.html | Name/address/phone consistency across directories.
 - [ ] How Many Google Reviews Do You Need to Rank Locally? | seo.html | Honest answer: no fixed number, what matters instead.

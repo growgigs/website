@@ -31,8 +31,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
 - [x] Why Isn't My Business Showing Up in the Local Map Pack? | seo.html | Common ranking blockers. | published as blog-not-showing-local-map-pack.html
 - [x] Local SEO Checklist for Small Businesses | seo.html | Condensed actionable checklist. | published as blog-local-seo-checklist-small-business.html
-- [ ] How Reviews Affect Your Local Search Ranking | seo.html | Ties review volume/recency to ranking factors.
-- [ ] NAP Consistency: Why It Matters for Local SEO | seo.html | Name/address/phone consistency across directories.
+- [x] How Reviews Affect Your Local Search Ranking | seo.html | Ties review volume/recency to ranking factors. | published as blog-reviews-affect-local-search-ranking.html
+- [x] NAP Consistency: Why It Matters for Local SEO | seo.html | Name/address/phone consistency across directories. | published as blog-nap-consistency-local-seo.html
 - [ ] How Many Google Reviews Do You Need to Rank Locally? | seo.html | Honest answer: no fixed number, what matters instead.
 
 ## Partnerships (partners.html)

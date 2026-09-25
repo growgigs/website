@@ -1,18 +1,20 @@
-import { POLICIES, QUESTIONS, matchPolicy } from "./policies.js";
 import { API_BASE } from "./api-config.js";
 
 const STATUS_OPTIONS = ["Drafted", "Submitted", "Under Review", "Removed", "Rejected", "Escalated"];
 
-const questionnaireEl = document.getElementById("questionnaire");
+const formEl = document.getElementById("report-form");
 const resultEl = document.getElementById("report-result");
 const trackerBody = document.getElementById("tracker-body");
 const trackerTable = document.getElementById("tracker-table");
 const trackerEmpty = document.getElementById("tracker-empty");
 
-let answers = {};
-let currentIndex = 0;
-let currentMatch = null; // { questionId, policyKey, policy }
-let reportDirty = false;
+const businessInput = document.getElementById("business-name");
+const reviewerInput = document.getElementById("reviewer-name");
+const reviewUrlInput = document.getElementById("review-url");
+const profileUrlInput = document.getElementById("reviewer-profile-url");
+const commentsInput = document.getElementById("comments");
+const analyzeBtn = document.getElementById("analyze-btn");
+const analyzeStatus = document.getElementById("analyze-status");
 
 /* ---------- Auth gate ---------- */
 // This page is static (no server-side gate is possible on this hosting
@@ -34,95 +36,84 @@ document.getElementById("logout-btn").addEventListener("click", () => {
   window.location.href = "/tools-login.html";
 });
 
-/* ---------- Questionnaire ---------- */
-function renderQuestionnaire() {
-  resultEl.hidden = true;
-  resultEl.innerHTML = "";
+/* ---------- Analyze ---------- */
+analyzeBtn.addEventListener("click", async () => {
+  const payload = {
+    business_name: businessInput.value.trim(),
+    reviewer_name: reviewerInput.value.trim(),
+    review_url: reviewUrlInput.value.trim(),
+    reviewer_profile_url: profileUrlInput.value.trim(),
+    comments: commentsInput.value.trim(),
+  };
 
-  if (currentIndex >= QUESTIONS.length) {
-    questionnaireEl.innerHTML = `
-      <div class="match-banner">
-        <div class="label">No clear policy match</div>
-        <div class="summary">Based on your answers, this review doesn't clearly violate one of Google's removal policies. It may still be worth a professional response instead of a removal request — see our guide on responding to negative reviews.</div>
-      </div>
-      <button class="btn-outline q-restart" id="restart-btn">Start Over</button>
-    `;
-    document.getElementById("restart-btn").addEventListener("click", resetQuestionnaire);
+  if (!payload.comments) {
+    analyzeStatus.textContent = "Paste the review text or describe the situation first.";
     return;
   }
 
-  const q = QUESTIONS[currentIndex];
-  questionnaireEl.innerHTML = `
-    <div class="q-item">
-      <div class="q-text">${escapeHtml(q.text)}</div>
-      <div class="q-choices">
-        <button type="button" data-answer="yes">Yes</button>
-        <button type="button" data-answer="no">No</button>
-      </div>
-    </div>
-    <button class="btn-outline q-restart" id="restart-btn">Start Over</button>
-  `;
+  analyzeBtn.disabled = true;
+  analyzeStatus.textContent = "Analyzing...";
+  resultEl.hidden = true;
 
-  questionnaireEl.querySelectorAll(".q-choices button").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      answers[q.id] = btn.dataset.answer;
-      const match = matchPolicy(answers);
-      if (match) {
-        currentMatch = match;
-        showMatch(match);
-      } else {
-        currentIndex += 1;
-        renderQuestionnaire();
-      }
+  try {
+    const res = await fetch(`${API_BASE}/analyze`, {
+      method: "POST",
+      headers: authHeaders({ "Content-Type": "application/json" }),
+      body: JSON.stringify(payload),
     });
-  });
+    const data = await res.json();
+    analyzeBtn.disabled = false;
+    analyzeStatus.textContent = "";
 
-  document.getElementById("restart-btn").addEventListener("click", resetQuestionnaire);
-}
+    if (!res.ok || !data.ok) {
+      analyzeStatus.textContent = data.error || "Analysis failed. Try again.";
+      return;
+    }
 
-function resetQuestionnaire() {
-  answers = {};
-  currentIndex = 0;
-  currentMatch = null;
-  reportDirty = false;
-  renderQuestionnaire();
-}
+    if (!data.matched) {
+      showNoMatch(data.reasoning, payload);
+      return;
+    }
 
-/* ---------- Report builder ---------- */
-function showMatch(match) {
-  questionnaireEl.innerHTML = "";
+    showMatch(data, payload);
+  } catch {
+    analyzeBtn.disabled = false;
+    analyzeStatus.textContent = "Analysis failed. Check your connection and try again.";
+  }
+});
+
+function showNoMatch(reasoning, payload) {
   resultEl.hidden = false;
-
-  const policy = match.policy;
   resultEl.innerHTML = `
     <div class="match-banner">
-      <div class="label">${escapeHtml(policy.label)}</div>
-      <div class="summary">${escapeHtml(policy.summary)}</div>
+      <div class="label">No clear policy match</div>
+      <div class="summary">${escapeHtml(reasoning || "This doesn't clearly violate one of Google's removal policies based on what was given.")} It may still be worth a professional response instead of a removal request.</div>
     </div>
+    <button class="btn-outline" id="new-report-btn" type="button">Start Another Report</button>
+  `;
+  document.getElementById("new-report-btn").addEventListener("click", resetForm);
+}
 
-    <div class="field-group">
-      <label for="business-name">Client / Business Name</label>
-      <input type="text" id="business-name" placeholder="e.g. Acme Plumbing">
-    </div>
-    <div class="field-group">
-      <label for="reviewer-name">Reviewer Name (if known)</label>
-      <input type="text" id="reviewer-name">
-    </div>
-    <div class="field-group">
-      <label for="specific-facts">Specific facts for this case</label>
-      <textarea id="specific-facts" placeholder="e.g. No record of this name or details in our booking system for the stated dates."></textarea>
+/* ---------- Report result ---------- */
+function showMatch(data, payload) {
+  resultEl.hidden = false;
+  let reportDirty = false;
+
+  resultEl.innerHTML = `
+    <div class="match-banner">
+      <div class="label">${escapeHtml(data.policy_label)}</div>
+      <div class="summary">${escapeHtml(data.reasoning || "")}</div>
     </div>
 
     <div class="field-group">
       <label for="report-text">Draft Report Text (edit freely before submitting)</label>
-      <textarea id="report-text"></textarea>
+      <textarea id="report-text">${escapeHtml(data.report_text || "")}</textarea>
     </div>
-    <button class="btn-outline" id="regen-btn" type="button" style="margin-bottom:18px;">Reset to Template</button>
 
     <div class="field-group">
       <label>Evidence Checklist</label>
       <ul class="evidence-list">
-        ${policy.evidence.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        ${(data.evidence_checklist || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
       </ul>
     </div>
 
@@ -137,32 +128,12 @@ function showMatch(match) {
     <p id="save-status" style="margin-top:10px; font-size:0.85rem;"></p>
   `;
 
-  const businessInput = document.getElementById("business-name");
-  const reviewerInput = document.getElementById("reviewer-name");
-  const factsInput = document.getElementById("specific-facts");
   const reportText = document.getElementById("report-text");
-
-  function regenerate() {
-    reportText.value = policy.reportTemplate({
-      businessName: businessInput.value.trim(),
-      reviewerName: reviewerInput.value.trim(),
-      specificFacts: factsInput.value.trim(),
-    });
-    reportDirty = false;
-  }
-  regenerate();
-
-  [businessInput, reviewerInput, factsInput].forEach((el) => {
-    el.addEventListener("input", () => {
-      if (!reportDirty) regenerate();
-    });
-  });
   reportText.addEventListener("input", () => {
     reportDirty = true;
   });
-  document.getElementById("regen-btn").addEventListener("click", regenerate);
 
-  document.getElementById("new-report-btn").addEventListener("click", resetQuestionnaire);
+  document.getElementById("new-report-btn").addEventListener("click", resetForm);
 
   document.getElementById("save-case-btn").addEventListener("click", async () => {
     const statusEl = document.getElementById("save-status");
@@ -172,26 +143,39 @@ function showMatch(match) {
         method: "POST",
         headers: authHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({
-          client_name: businessInput.value.trim(),
-          reviewer_name: reviewerInput.value.trim(),
-          review_text: factsInput.value.trim(),
-          matched_policy: policy.label,
-          policy_citation: match.policyKey,
+          client_name: payload.business_name,
+          reviewer_name: payload.reviewer_name,
+          review_text: payload.comments,
+          review_url: payload.review_url,
+          reviewer_profile_url: payload.reviewer_profile_url,
+          matched_policy: data.policy_label,
+          policy_citation: data.policy_key,
           report_text: reportText.value,
           status: "Drafted",
         }),
       });
-      const data = await res.json();
-      if (res.ok && data.ok) {
+      const resData = await res.json();
+      if (res.ok && resData.ok) {
         statusEl.textContent = "Saved to tracker.";
-        addCaseRow(data.case);
+        addCaseRow(resData.case);
       } else {
-        statusEl.textContent = data.error || "Failed to save.";
+        statusEl.textContent = resData.error || "Failed to save.";
       }
     } catch {
       statusEl.textContent = "Failed to save. Check your connection.";
     }
   });
+}
+
+function resetForm() {
+  businessInput.value = "";
+  reviewerInput.value = "";
+  reviewUrlInput.value = "";
+  profileUrlInput.value = "";
+  commentsInput.value = "";
+  resultEl.hidden = true;
+  resultEl.innerHTML = "";
+  analyzeStatus.textContent = "";
 }
 
 /* ---------- Case tracker ---------- */
@@ -213,10 +197,20 @@ function addCaseRow(c) {
 
   const row = document.createElement("tr");
   row.dataset.id = c.id;
+  const links = [
+    c.review_url ? `<a href="${escapeHtml(c.review_url)}" target="_blank" rel="noopener">Review ↗</a>` : "",
+    c.reviewer_profile_url
+      ? `<a href="${escapeHtml(c.reviewer_profile_url)}" target="_blank" rel="noopener">Profile ↗</a>`
+      : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
   row.innerHTML = `
     <td class="client-cell">
       ${escapeHtml(c.client_name || "—")}
       <div class="reviewer">${escapeHtml(c.reviewer_name || "")}</div>
+      ${links ? `<div class="reviewer">${links}</div>` : ""}
       <button class="view-btn" type="button">View report</button>
     </td>
     <td>${escapeHtml(c.matched_policy || "—")}</td>
@@ -262,7 +256,7 @@ function addCaseRow(c) {
     }
     const detail = document.createElement("tr");
     detail.className = "tracker-detail-row";
-    detail.innerHTML = `<td colspan="7"><strong>Facts on record:</strong>\n${escapeHtml(c.review_text || "—")}\n\n<strong>Report text:</strong>\n${escapeHtml(c.report_text || "—")}</td>`;
+    detail.innerHTML = `<td colspan="7"><strong>Review text / comments:</strong>\n${escapeHtml(c.review_text || "—")}\n\n<strong>Report text:</strong>\n${escapeHtml(c.report_text || "—")}</td>`;
     row.after(detail);
   });
 }
@@ -290,5 +284,4 @@ function escapeHtml(str) {
 }
 
 /* ---------- Init ---------- */
-renderQuestionnaire();
 loadCases();

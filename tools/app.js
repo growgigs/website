@@ -118,7 +118,7 @@ function showMatch(data, payload) {
     </div>
 
     <div class="submit-guidance">
-      <strong>How to submit:</strong> Open the review on Google Maps or in Google Business Profile, use the three-dot menu on that specific review, and choose the option to flag/report it. If the flag option doesn't resolve it, escalate through Google Business Profile's Help/Support chat and reference the specific policy above by name rather than describing it generically. This does not guarantee removal.
+      <strong>How to submit:</strong> Open the review, use the three-dot menu, and choose "Report review". ${escapeHtml(data.submit_guidance || "")} This does not guarantee removal.
     </div>
 
     <div class="result-actions">

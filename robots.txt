@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /tools/
+Disallow: /tools-login.html
 
 Sitemap: https://growgigs.io/sitemap.xml

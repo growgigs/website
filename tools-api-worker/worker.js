@@ -106,6 +106,32 @@ export default {
       return json({ ok: false, error: "Unauthorized" }, 401);
     }
 
+    // One-time (idempotent) table setup, run via a single authenticated
+    // POST instead of requiring local CLI/wrangler access.
+    if (url.pathname === "/migrate" && request.method === "POST") {
+      await env.DB.prepare(
+        `CREATE TABLE IF NOT EXISTS cases (
+          id TEXT PRIMARY KEY,
+          created_at TEXT NOT NULL,
+          updated_at TEXT NOT NULL,
+          client_name TEXT,
+          reviewer_name TEXT,
+          review_text TEXT,
+          business_category TEXT,
+          matched_policy TEXT,
+          policy_citation TEXT,
+          report_text TEXT,
+          status TEXT NOT NULL DEFAULT 'Drafted',
+          google_case_id TEXT,
+          notes TEXT,
+          follow_up_date TEXT
+        )`
+      ).run();
+      await env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_cases_status ON cases(status)").run();
+      await env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_cases_created ON cases(created_at)").run();
+      return json({ ok: true, migrated: true });
+    }
+
     if (url.pathname === "/cases" && request.method === "GET") {
       const { results } = await env.DB.prepare("SELECT * FROM cases ORDER BY created_at DESC").all();
       return json({ ok: true, cases: results });

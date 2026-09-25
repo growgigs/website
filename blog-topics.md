@@ -33,10 +33,10 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Local SEO Checklist for Small Businesses | seo.html | Condensed actionable checklist. | published as blog-local-seo-checklist-small-business.html
 - [x] How Reviews Affect Your Local Search Ranking | seo.html | Ties review volume/recency to ranking factors. | published as blog-reviews-affect-local-search-ranking.html
 - [x] NAP Consistency: Why It Matters for Local SEO | seo.html | Name/address/phone consistency across directories. | published as blog-nap-consistency-local-seo.html
-- [ ] How Many Google Reviews Do You Need to Rank Locally? | seo.html | Honest answer: no fixed number, what matters instead.
+- [x] How Many Google Reviews Do You Need to Rank Locally? | seo.html | Honest answer: no fixed number, what matters instead. | published as blog-how-many-reviews-rank-locally.html
 
 ## Partnerships (partners.html)
-- [ ] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors.
+- [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
 - [ ] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle.
 
 ## General Trust & Buyer Education (none, or link to homepage)

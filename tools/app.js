@@ -1,4 +1,5 @@
 import { POLICIES, QUESTIONS, matchPolicy } from "./policies.js";
+import { API_BASE } from "./api-config.js";
 
 const STATUS_OPTIONS = ["Drafted", "Submitted", "Under Review", "Removed", "Rejected", "Escalated"];
 
@@ -13,9 +14,23 @@ let currentIndex = 0;
 let currentMatch = null; // { questionId, policyKey, policy }
 let reportDirty = false;
 
+/* ---------- Auth gate ---------- */
+// This page is static (no server-side gate is possible on this hosting
+// setup), so access control happens client-side: no valid token, no data.
+// The page itself has no sensitive content; the API refuses requests
+// without a valid token regardless.
+const authToken = localStorage.getItem("gg_tools_token");
+if (!authToken) {
+  window.location.href = "/tools-login.html";
+}
+
+function authHeaders(extra = {}) {
+  return { Authorization: `Bearer ${authToken}`, ...extra };
+}
+
 /* ---------- Logout ---------- */
-document.getElementById("logout-btn").addEventListener("click", async () => {
-  await fetch("/api/logout", { method: "POST" });
+document.getElementById("logout-btn").addEventListener("click", () => {
+  localStorage.removeItem("gg_tools_token");
   window.location.href = "/tools-login.html";
 });
 
@@ -153,9 +168,9 @@ function showMatch(match) {
     const statusEl = document.getElementById("save-status");
     statusEl.textContent = "Saving...";
     try {
-      const res = await fetch("/api/cases", {
+      const res = await fetch(`${API_BASE}/cases`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: authHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({
           client_name: businessInput.value.trim(),
           reviewer_name: reviewerInput.value.trim(),
@@ -182,7 +197,7 @@ function showMatch(match) {
 /* ---------- Case tracker ---------- */
 async function loadCases() {
   try {
-    const res = await fetch("/api/cases");
+    const res = await fetch(`${API_BASE}/cases`, { headers: authHeaders() });
     const data = await res.json();
     if (res.ok && data.ok) {
       data.cases.forEach(addCaseRow);
@@ -231,7 +246,7 @@ function addCaseRow(c) {
   });
   row.querySelector(".delete-btn").addEventListener("click", async () => {
     if (!confirm("Delete this case? This can't be undone.")) return;
-    await fetch(`/api/cases/${c.id}`, { method: "DELETE" });
+    await fetch(`${API_BASE}/cases/${c.id}`, { method: "DELETE", headers: authHeaders() });
     row.nextElementSibling?.classList.contains("tracker-detail-row") && row.nextElementSibling.remove();
     row.remove();
     if (!trackerBody.children.length) {
@@ -254,9 +269,9 @@ function addCaseRow(c) {
 
 async function updateCase(id, patch) {
   try {
-    await fetch(`/api/cases/${id}`, {
+    await fetch(`${API_BASE}/cases/${id}`, {
       method: "PATCH",
-      headers: { "Content-Type": "application/json" },
+      headers: authHeaders({ "Content-Type": "application/json" }),
       body: JSON.stringify(patch),
     });
   } catch {

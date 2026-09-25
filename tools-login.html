@@ -40,20 +40,23 @@
   </form>
 </div>
 
-<script>
+<script type="module">
+  import { API_BASE } from "./tools/api-config.js";
+
   document.getElementById("login-form").addEventListener("submit", async function (e) {
     e.preventDefault();
     var errorEl = document.getElementById("error");
     errorEl.style.display = "none";
     var password = document.getElementById("password").value;
     try {
-      var res = await fetch("/api/login", {
+      var res = await fetch(API_BASE + "/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password: password }),
       });
       var data = await res.json();
-      if (res.ok && data.ok) {
+      if (res.ok && data.ok && data.token) {
+        localStorage.setItem("gg_tools_token", data.token);
         window.location.href = "/tools/";
       } else {
         errorEl.textContent = data.error || "Incorrect password.";

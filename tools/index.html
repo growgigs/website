@@ -29,7 +29,30 @@
   <div class="tools-grid">
     <section class="tools-card" id="report-builder">
       <h2>New Report</h2>
-      <div id="questionnaire"></div>
+      <div id="report-form">
+        <div class="field-group">
+          <label for="business-name">Business Name</label>
+          <input type="text" id="business-name" placeholder="e.g. Acme Plumbing">
+        </div>
+        <div class="field-group">
+          <label for="reviewer-name">Reviewer Name</label>
+          <input type="text" id="reviewer-name">
+        </div>
+        <div class="field-group">
+          <label for="review-url">Review Link</label>
+          <input type="url" id="review-url" placeholder="https://www.google.com/maps/...">
+        </div>
+        <div class="field-group">
+          <label for="reviewer-profile-url">Reviewer Profile Link (optional)</label>
+          <input type="url" id="reviewer-profile-url" placeholder="https://www.google.com/maps/contrib/...">
+        </div>
+        <div class="field-group">
+          <label for="comments">Review Text / Comments</label>
+          <textarea id="comments" placeholder="Paste the review text and anything you know about the situation (e.g. no record of this customer, this is a former employee, etc.)"></textarea>
+        </div>
+        <button class="btn" id="analyze-btn" type="button">Analyze</button>
+        <p id="analyze-status" style="margin-top:10px; font-size:0.85rem;"></p>
+      </div>
       <div id="report-result" hidden></div>
     </section>
 

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../logo.svg">
+<title>Review Report Tool | GrowGigs Internal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="tools.css">
+</head>
+<body>
+
+<header class="tools-header">
+  <div class="wrap tools-header-inner">
+    <div class="tools-brand">
+      <img src="../logo.svg" alt="" width="24" height="24">
+      <span>GrowGigs Internal</span>
+    </div>
+    <button id="logout-btn" class="btn-outline">Log Out</button>
+  </div>
+</header>
+
+<main class="wrap tools-main">
+  <h1>Review Report Tool</h1>
+  <p class="tools-sub">Match a review to the specific Google policy it violates, draft a report that cites it, and track the case through to resolution. This doesn't guarantee removal — Google makes the final call — but a report that cites the right policy with real evidence gets reviewed far more effectively than a vague complaint.</p>
+
+  <div class="tools-grid">
+    <section class="tools-card" id="report-builder">
+      <h2>New Report</h2>
+      <div id="questionnaire"></div>
+      <div id="report-result" hidden></div>
+    </section>
+
+    <section class="tools-card" id="case-tracker">
+      <h2>Case Tracker</h2>
+      <p class="tools-empty" id="tracker-empty">No cases yet. Build a report and save it to start tracking.</p>
+      <div class="tracker-table-wrap">
+        <table class="tracker-table" id="tracker-table" hidden>
+          <thead>
+            <tr>
+              <th>Client / Business</th>
+              <th>Matched Policy</th>
+              <th>Status</th>
+              <th>Google Case ID</th>
+              <th>Follow-up</th>
+              <th>Notes</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tracker-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>

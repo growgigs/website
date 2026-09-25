@@ -52,6 +52,23 @@ const POLICIES = {
   },
 };
 
+// Google's actual "Flag as inappropriate" menu only has a handful of
+// simple, self-evident reasons — it does not have a button for every
+// policy above. This maps each policy to what's really there, so the
+// report tells the team exactly what to click instead of guessing.
+const SUBMIT_GUIDANCE = {
+  restricted_content:
+    'In Google\'s flag menu, choose whichever fits most specifically: "Harmful", "Discrimination or hate speech", "Profanity", or "Bullying or harassment". These are direct, self-evident matches the simple flag menu is built to handle.',
+  personal_information:
+    'In Google\'s flag menu, choose "Personal information". This is a direct match the simple flag menu is built to handle.',
+  conflict_of_interest:
+    "There's no direct button for this in Google's simple flag menu. \"Low quality information\" (off-topic) is the closest partial fallback, but a case like this needs human judgment the simple menu can't give — the reliable path is escalating through Google Business Profile Support (chat or their help contact form) with the full report below.",
+  off_topic_no_visit:
+    'Try "Low quality information" in Google\'s flag menu (it covers off-topic reviews). If that doesn\'t resolve it, escalate through Google Business Profile Support with the report below — the simple flag menu often isn\'t enough on its own for this category.',
+  fake_spam:
+    'Try "Low quality information" in Google\'s flag menu (covers gibberish/repetitive/ad-like content). For a stronger case — especially if you have evidence of the same review posted elsewhere — escalate through Google Business Profile Support with the report below.',
+};
+
 function corsHeaders() {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
@@ -272,6 +289,9 @@ export default {
           reasoning: result.reasoning,
           report_text: result.report_text || "",
           evidence_checklist: result.evidence_checklist || [],
+          submit_guidance:
+            SUBMIT_GUIDANCE[result.policy_key] ||
+            "Use Google's flag menu if a reason fits, otherwise escalate through Google Business Profile Support with the report below.",
         });
       } catch (err) {
         return json({ ok: false, error: String(err.message || err) }, 502);

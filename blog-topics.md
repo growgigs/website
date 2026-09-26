@@ -37,10 +37,10 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
-- [ ] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle.
+- [x] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle. | published as blog-agencies-white-label-review-removal.html
 
 ## General Trust & Buyer Education (none, or link to homepage)
-- [ ] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly.
+- [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html
 - [ ] How Much Does Online Reputation Management Cost? | reputation.html | Pricing models compared, incl. pay-per-result.
 - [ ] Reputation Management vs. Review Removal: What's the Difference? | reputation.html | Clarify overlapping terms.
 - [ ] What to Ask Before Hiring a Review Removal Company | reputation.html | Red flags, guaranteed-removal scams.

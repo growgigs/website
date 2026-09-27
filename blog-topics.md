@@ -41,6 +41,6 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 
 ## General Trust & Buyer Education (none, or link to homepage)
 - [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html
-- [ ] How Much Does Online Reputation Management Cost? | reputation.html | Pricing models compared, incl. pay-per-result.
-- [ ] Reputation Management vs. Review Removal: What's the Difference? | reputation.html | Clarify overlapping terms.
+- [x] How Much Does Online Reputation Management Cost? | reputation.html | Pricing models compared, incl. pay-per-result. | published as blog-how-much-does-reputation-management-cost.html
+- [x] Reputation Management vs. Review Removal: What's the Difference? | reputation.html | Clarify overlapping terms. | published as blog-reputation-management-vs-review-removal.html
 - [ ] What to Ask Before Hiring a Review Removal Company | reputation.html | Red flags, guaranteed-removal scams.

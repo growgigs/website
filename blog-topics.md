@@ -44,3 +44,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Much Does Online Reputation Management Cost? | reputation.html | Pricing models compared, incl. pay-per-result. | published as blog-how-much-does-reputation-management-cost.html
 - [x] Reputation Management vs. Review Removal: What's the Difference? | reputation.html | Clarify overlapping terms. | published as blog-reputation-management-vs-review-removal.html
 - [x] What to Ask Before Hiring a Review Removal Company | reputation.html | Red flags, guaranteed-removal scams. | published as blog-what-to-ask-before-hiring-review-removal-company.html
+
+## Added off-cycle (user request, not from routine)
+- [x] How to Flag a Review on Trustpilot: Grounds, Evidence, and What to Expect | reputation.html | Deep-dive on Trustpilot's own flagging process, distinct from the earlier Google-comparison post. | published as blog-how-to-flag-review-trustpilot.html
+- [x] Google Detected a Spike in Spam Reviews on My Business — What This Means | reputation.html | Covers Google's review-pause-after-spam-spike issue, grounded via web search. | published as blog-google-spike-spam-reviews-paused.html

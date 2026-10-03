@@ -1,0 +1,34 @@
+<svg viewBox="0 0 480 320" width="480" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pt-title pt-desc">
+<title id="pt-title">An agency's brand connected to GrowGigs through a white-label partnership</title>
+<desc id="pt-desc">Illustration of two cards linked together, one representing a partner agency's brand and one representing GrowGigs, connected by a plug icon.</desc>
+<rect width="480" height="320" rx="28" fill="#f5faf6"/>
+<rect x="56" y="90" width="150" height="140" rx="16" fill="#ffffff" stroke="#e5ece6" stroke-width="1.5"/>
+<circle cx="90" cy="124" r="14" fill="#5c6b62" opacity="0.35"/>
+<rect x="112" y="118" width="70" height="9" rx="4.5" fill="#0f1a14" opacity="0.6"/>
+<rect x="74" y="150" width="114" height="7" rx="3.5" fill="#5c6b62" opacity="0.3"/>
+<rect x="74" y="166" width="90" height="7" rx="3.5" fill="#5c6b62" opacity="0.3"/>
+<rect x="74" y="190" width="84" height="22" rx="11" fill="#eef3ee"/>
+<rect x="274" y="90" width="150" height="140" rx="16" fill="#ffffff" stroke="#e5ece6" stroke-width="1.5"/>
+<g transform="translate(300,114)">
+<path d="M12,28 C4,25 1,18 6,9 C10,15 11,22 12,28 Z" fill="#8cc63f"/>
+<path d="M12,28 C8,21 8,10 12,2 C17,10 17,21 12,28 Z" fill="#159f4a"/>
+<path d="M12,28 C13,19 16,10 21,4 C22,14 21,23 12,28 Z" fill="#4fc7c3"/>
+</g>
+<rect x="330" y="118" width="70" height="9" rx="4.5" fill="#0f1a14" opacity="0.6"/>
+<rect x="292" y="150" width="114" height="7" rx="3.5" fill="#5c6b62" opacity="0.3"/>
+<rect x="292" y="166" width="90" height="7" rx="3.5" fill="#5c6b62" opacity="0.3"/>
+<rect x="292" y="190" width="100" height="22" rx="11" fill="#e7f7ee"/>
+<path d="M206 160 H274" stroke="#c7d1ca" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+<g transform="translate(240,160)">
+<circle r="26" fill="#159f4a"/>
+<path d="M-8 -8 l16 16 M8 -8 l-16 16" stroke="#ffffff" stroke-width="0" fill="none"/>
+<path d="M-10 -2 h8 a2 2 0 0 1 2 2 v0 a2 2 0 0 1 -2 2 h-8 Z" fill="#ffffff"/>
+<path d="M10 -2 h-8 a2 2 0 0 0 -2 2 v0 a2 2 0 0 0 2 2 h8 Z" fill="#ffffff"/>
+<rect x="-2" y="-9" width="4" height="18" rx="2" fill="#ffffff"/>
+</g>
+<rect x="150" y="238" width="180" height="26" rx="13" fill="#e7f7ee"/>
+<path d="M164 246 v12 M164 246 l9 2.2 -9 2.2" fill="none" stroke="#0d7a38" stroke-width="0" opacity="0"/>
+<circle cx="168" cy="251" r="6" fill="#0d7a38"/>
+<path d="M165.5 251 l1.8 1.8 3.5-3.5" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="184" y="246" width="128" height="8" rx="4" fill="#0d7a38" opacity="0.8"/>
+</svg>

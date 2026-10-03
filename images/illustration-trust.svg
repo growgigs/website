@@ -1,0 +1,20 @@
+<svg viewBox="0 0 480 320" width="480" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tr-title tr-desc">
+<title id="tr-title">A shield representing transparent, pay-for-results service</title>
+<desc id="tr-desc">Illustration of a shield with a checkmark inside, next to a small coin badge representing honest, transparent pricing.</desc>
+<rect width="480" height="320" rx="28" fill="#f5faf6"/>
+<g transform="translate(200,160)">
+<path d="M0,-92 C40,-78 76,-72 76,-72 C76,-10 50,48 0,86 C-50,48 -76,-10 -76,-72 C-76,-72 -40,-78 0,-92 Z" fill="#159f4a"/>
+<path d="M0,-92 C40,-78 76,-72 76,-72 C76,-10 50,48 0,86 Z" fill="#0d7a38"/>
+<circle cx="0" cy="-6" r="40" fill="#ffffff"/>
+<path d="M-18 -4 l12 14 26-30" fill="none" stroke="#159f4a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(330,232)">
+<circle r="36" fill="#ffffff" stroke="#e5ece6" stroke-width="1.5"/>
+<circle r="36" fill="#f0b429" opacity="0.14"/>
+<text x="0" y="12" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#b9870f" text-anchor="middle">$</text>
+</g>
+<rect x="108" y="256" width="150" height="24" rx="12" fill="#e7f7ee"/>
+<circle cx="122" cy="268" r="5.5" fill="#0d7a38"/>
+<path d="M119.6 268 l1.6 1.6 3.2-3.2" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="136" y="263" width="104" height="8" rx="4" fill="#0d7a38" opacity="0.8"/>
+</svg>

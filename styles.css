@@ -564,6 +564,14 @@ h2 {
 .article ul, .article ol { margin: 0 0 18px; padding-left: 22px; }
 .article li { margin-bottom: 8px; }
 .article .lede { font-size: 1.1rem; color: var(--muted); margin-bottom: 32px; }
+.article-illustration {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto 36px;
+  border-radius: 18px;
+}
 
 .blog-grid {
   display: grid;

@@ -19,8 +19,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Many Bad Reviews Does It Take to Hurt Your Business? | reputation.html | Ratings/conversion impact, sourced conservatively. | published as blog-how-many-bad-reviews-hurt-business.html
 - [x] Can You Sue Someone for Leaving a Fake Review? | reputation.html | Legal options beyond platform reporting: defamation basics, when it's actually worth pursuing. | published as blog-can-you-sue-fake-review.html
 - [x] Do Negative Reviews Ever Expire or Age Out on Google? | reputation.html | Clear up the myth that reviews expire; what actually changes their visibility over time. | published as blog-do-reviews-expire-google.html
-- [ ] How to Respond to a Review That's Partly Fair and Partly Wrong | reputation.html | Nuanced response strategy for mixed-accuracy reviews that don't qualify for removal.
-- [ ] Review Removal vs. Review Suppression: What's the Difference? | reputation.html | Clarify that burying bad reviews with good ones isn't the same as getting one removed.
+- [x] How to Respond to a Review That's Partly Fair and Partly Wrong | reputation.html | Nuanced response strategy for mixed-accuracy reviews that don't qualify for removal. | published as blog-respond-partly-fair-review.html
+- [x] Review Removal vs. Review Suppression: What's the Difference? | reputation.html | Clarify that burying bad reviews with good ones isn't the same as getting one removed. | published as blog-review-removal-vs-suppression.html
 
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html

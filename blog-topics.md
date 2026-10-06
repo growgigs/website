@@ -30,8 +30,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Find Who's Hosting Infringing Content | takedowns.html | WHOIS lookups, contacting hosts directly. | published as blog-find-hosting-infringing-content.html
 - [x] What to Do When a Competitor Copies Your Website Content | takedowns.html | DMCA angle for scraped/copied text. | published as blog-competitor-copies-website-content.html
 - [x] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints. | published as blog-scam-website-impersonation-takedown.html
-- [ ] How to Remove Old News Articles or Blog Posts About Your Business | takedowns.html | What's actually possible with outdated coverage: contacting publishers directly, realistic limits (no US right-to-be-forgotten).
-- [ ] Reporting a Duplicate or Fake Google Maps Listing for a Competitor's Location | takedowns.html | Walkthrough of Google's duplicate/spam listing reporting flow.
+- [x] How to Remove Old News Articles or Blog Posts About Your Business | takedowns.html | What's actually possible with outdated coverage: contacting publishers directly, realistic limits (no US right-to-be-forgotten). | published as blog-remove-old-news-articles.html
+- [x] Reporting a Duplicate or Fake Google Maps Listing for a Competitor's Location | takedowns.html | Walkthrough of Google's duplicate/spam listing reporting flow. | published as blog-fake-duplicate-google-maps-listing.html
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html

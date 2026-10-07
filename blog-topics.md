@@ -40,8 +40,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Reviews Affect Your Local Search Ranking | seo.html | Ties review volume/recency to ranking factors. | published as blog-reviews-affect-local-search-ranking.html
 - [x] NAP Consistency: Why It Matters for Local SEO | seo.html | Name/address/phone consistency across directories. | published as blog-nap-consistency-local-seo.html
 - [x] How Many Google Reviews Do You Need to Rank Locally? | seo.html | Honest answer: no fixed number, what matters instead. | published as blog-how-many-reviews-rank-locally.html
-- [ ] Why Did My Google Business Profile Get Suspended? | seo.html | Common suspension triggers (guideline violations, suspicious edits) and the reinstatement process.
-- [ ] Google Business Profile Categories: How to Pick the Right Ones | seo.html | Primary vs. secondary category selection and how it affects visibility.
+- [x] Why Did My Google Business Profile Get Suspended? | seo.html | Common suspension triggers (guideline violations, suspicious edits) and the reinstatement process. | published as blog-google-business-profile-suspended.html
+- [x] Google Business Profile Categories: How to Pick the Right Ones | seo.html | Primary vs. secondary category selection and how it affects visibility. | published as blog-google-business-profile-categories.html
 - [ ] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact.
 
 ## Partnerships (partners.html)

@@ -42,12 +42,12 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Many Google Reviews Do You Need to Rank Locally? | seo.html | Honest answer: no fixed number, what matters instead. | published as blog-how-many-reviews-rank-locally.html
 - [x] Why Did My Google Business Profile Get Suspended? | seo.html | Common suspension triggers (guideline violations, suspicious edits) and the reinstatement process. | published as blog-google-business-profile-suspended.html
 - [x] Google Business Profile Categories: How to Pick the Right Ones | seo.html | Primary vs. secondary category selection and how it affects visibility. | published as blog-google-business-profile-categories.html
-- [ ] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact.
+- [x] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact. | published as blog-how-often-post-google-business-profile.html
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
 - [x] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle. | published as blog-agencies-white-label-review-removal.html
-- [ ] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal.
+- [x] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal. | published as blog-white-label-partner-revenue-share-flat-fee.html
 
 ## General Trust & Buyer Education (none, or link to homepage)
 - [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html

@@ -62,7 +62,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 
 ## Trustpilot Review Removal (reputation.html)
 NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found via search consistently traced back to unofficial SEO-mill sites, not Trustpilot's own documentation. Keep these topics process/policy-based like the ones above; don't cite specific day-counts, percentages, or "X% of cases" style stats unless sourced from Trustpilot's own support site.
-- [ ] Can a Trustpilot Review Be Removed If You've Already Responded to It? | reputation.html | Trustpilot-specific version of the "does responding affect eligibility" question already covered for Google.
-- [ ] What Happens If a Trustpilot Reviewer Ignores the Verification Request? | reputation.html | Deeper look at the silence outcome of the "genuine experience" flagging step.
+- [x] Can a Trustpilot Review Be Removed If You've Already Responded to It? | reputation.html | Trustpilot-specific version of the "does responding affect eligibility" question already covered for Google. | published as blog-trustpilot-remove-after-responding.html
+- [x] What Happens If a Trustpilot Reviewer Ignores the Verification Request? | reputation.html | Deeper look at the silence outcome of the "genuine experience" flagging step. | published as blog-trustpilot-reviewer-ignores-verification.html
 - [ ] Trustpilot vs. Google Reviews: Which Should You Prioritize Removing First? | reputation.html | Decision framework for businesses dealing with bad reviews on both platforms at once.
 - [ ] Can You Get a Trustpilot Review Removed for Being Off-Topic? | reputation.html | Explains the off-topic complaint category and what actually qualifies.

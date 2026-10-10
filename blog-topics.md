@@ -21,8 +21,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Do Negative Reviews Ever Expire or Age Out on Google? | reputation.html | Clear up the myth that reviews expire; what actually changes their visibility over time. | published as blog-do-reviews-expire-google.html
 - [x] How to Respond to a Review That's Partly Fair and Partly Wrong | reputation.html | Nuanced response strategy for mixed-accuracy reviews that don't qualify for removal. | published as blog-respond-partly-fair-review.html
 - [x] Review Removal vs. Review Suppression: What's the Difference? | reputation.html | Clarify that burying bad reviews with good ones isn't the same as getting one removed. | published as blog-review-removal-vs-suppression.html
-- [ ] Glassdoor Review Removal: What's Different From Google and Trustpilot | reputation.html | Dedicated deep-dive on Glassdoor's own policies and process, mirroring the Trustpilot treatment.
-- [ ] Can a Former Employee's Negative Glassdoor Review Be Removed? | reputation.html | Specific scenario: ex-employee reviews, what qualifies vs. what's just a bad parting.
+- [x] Glassdoor Review Removal: What's Different From Google and Trustpilot | reputation.html | Dedicated deep-dive on Glassdoor's own policies and process, mirroring the Trustpilot treatment. | published as blog-glassdoor-review-removal.html
+- [x] Can a Former Employee's Negative Glassdoor Review Be Removed? | reputation.html | Specific scenario: ex-employee reviews, what qualifies vs. what's just a bad parting. | published as blog-glassdoor-former-employee-review.html
 - [ ] How to Tell If a Competitor Is Behind a Fake Review Campaign | reputation.html | Pattern-recognition checklist, careful not to encourage baseless accusations.
 
 ## Content Takedowns (takedowns.html)

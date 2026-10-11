@@ -23,7 +23,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Review Removal vs. Review Suppression: What's the Difference? | reputation.html | Clarify that burying bad reviews with good ones isn't the same as getting one removed. | published as blog-review-removal-vs-suppression.html
 - [x] Glassdoor Review Removal: What's Different From Google and Trustpilot | reputation.html | Dedicated deep-dive on Glassdoor's own policies and process, mirroring the Trustpilot treatment. | published as blog-glassdoor-review-removal.html
 - [x] Can a Former Employee's Negative Glassdoor Review Be Removed? | reputation.html | Specific scenario: ex-employee reviews, what qualifies vs. what's just a bad parting. | published as blog-glassdoor-former-employee-review.html
-- [ ] How to Tell If a Competitor Is Behind a Fake Review Campaign | reputation.html | Pattern-recognition checklist, careful not to encourage baseless accusations.
+- [x] How to Tell If a Competitor Is Behind a Fake Review Campaign | reputation.html | Pattern-recognition checklist, careful not to encourage baseless accusations. | published as blog-competitor-fake-review-campaign.html
 
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
@@ -35,7 +35,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Get a Scam Website Impersonating Your Business Taken Down | takedowns.html | Hosting abuse reports, registrar complaints. | published as blog-scam-website-impersonation-takedown.html
 - [x] How to Remove Old News Articles or Blog Posts About Your Business | takedowns.html | What's actually possible with outdated coverage: contacting publishers directly, realistic limits (no US right-to-be-forgotten). | published as blog-remove-old-news-articles.html
 - [x] Reporting a Duplicate or Fake Google Maps Listing for a Competitor's Location | takedowns.html | Walkthrough of Google's duplicate/spam listing reporting flow. | published as blog-fake-duplicate-google-maps-listing.html
-- [ ] What to Do If Your Business Logo or Branding Is Being Used Without Permission | takedowns.html | Trademark/brand misuse takedown process, distinct from general copyright.
+- [x] What to Do If Your Business Logo or Branding Is Being Used Without Permission | takedowns.html | Trademark/brand misuse takedown process, distinct from general copyright. | published as blog-logo-branding-used-without-permission.html
 - [ ] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain.
 
 ## Local SEO (seo.html)

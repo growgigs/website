@@ -36,7 +36,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Remove Old News Articles or Blog Posts About Your Business | takedowns.html | What's actually possible with outdated coverage: contacting publishers directly, realistic limits (no US right-to-be-forgotten). | published as blog-remove-old-news-articles.html
 - [x] Reporting a Duplicate or Fake Google Maps Listing for a Competitor's Location | takedowns.html | Walkthrough of Google's duplicate/spam listing reporting flow. | published as blog-fake-duplicate-google-maps-listing.html
 - [x] What to Do If Your Business Logo or Branding Is Being Used Without Permission | takedowns.html | Trademark/brand misuse takedown process, distinct from general copyright. | published as blog-logo-branding-used-without-permission.html
-- [ ] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain.
+- [x] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain. | published as blog-complaint-board-site-content-removal.html
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
@@ -48,7 +48,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Why Did My Google Business Profile Get Suspended? | seo.html | Common suspension triggers (guideline violations, suspicious edits) and the reinstatement process. | published as blog-google-business-profile-suspended.html
 - [x] Google Business Profile Categories: How to Pick the Right Ones | seo.html | Primary vs. secondary category selection and how it affects visibility. | published as blog-google-business-profile-categories.html
 - [x] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact. | published as blog-how-often-post-google-business-profile.html
-- [ ] How to Handle Duplicate Listings After a Business Merger or Rebrand | seo.html | Consolidating profiles correctly instead of leaving old listings active.
+- [x] How to Handle Duplicate Listings After a Business Merger or Rebrand | seo.html | Consolidating profiles correctly instead of leaving old listings active. | published as blog-duplicate-listings-merger-rebrand.html
 - [ ] Do Reviews From Other Locations Count Toward My Listing? | seo.html | Clears up confusion for multi-location businesses about how ratings work per-listing.
 
 ## Partnerships (partners.html)

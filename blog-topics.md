@@ -49,13 +49,13 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Google Business Profile Categories: How to Pick the Right Ones | seo.html | Primary vs. secondary category selection and how it affects visibility. | published as blog-google-business-profile-categories.html
 - [x] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact. | published as blog-how-often-post-google-business-profile.html
 - [x] How to Handle Duplicate Listings After a Business Merger or Rebrand | seo.html | Consolidating profiles correctly instead of leaving old listings active. | published as blog-duplicate-listings-merger-rebrand.html
-- [ ] Do Reviews From Other Locations Count Toward My Listing? | seo.html | Clears up confusion for multi-location businesses about how ratings work per-listing.
+- [x] Do Reviews From Other Locations Count Toward My Listing? | seo.html | Clears up confusion for multi-location businesses about how ratings work per-listing. | published as blog-reviews-other-locations-count.html
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
 - [x] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle. | published as blog-agencies-white-label-review-removal.html
 - [x] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal. | published as blog-white-label-partner-revenue-share-flat-fee.html
-- [ ] Onboarding Checklist: What to Prepare Before Launching a White-Label Partnership | partners.html | Practical partner-side prep list, not sales copy.
+- [x] Onboarding Checklist: What to Prepare Before Launching a White-Label Partnership | partners.html | Practical partner-side prep list, not sales copy. | published as blog-white-label-onboarding-checklist.html
 
 ## General Trust & Buyer Education (none, or link to homepage)
 - [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html

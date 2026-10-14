@@ -62,8 +62,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Much Does Online Reputation Management Cost? | reputation.html | Pricing models compared, incl. pay-per-result. | published as blog-how-much-does-reputation-management-cost.html
 - [x] Reputation Management vs. Review Removal: What's the Difference? | reputation.html | Clarify overlapping terms. | published as blog-reputation-management-vs-review-removal.html
 - [x] What to Ask Before Hiring a Review Removal Company | reputation.html | Red flags, guaranteed-removal scams. | published as blog-what-to-ask-before-hiring-review-removal-company.html
-- [ ] Can a Review Removal Company Access My Google Account? | reputation.html | Addresses a common misconception: removal is filed through official report channels, not by logging into your accounts.
-- [ ] What's the Difference Between Reporting a Review and Disputing It? | reputation.html | Terminology clarity for business owners navigating platform processes.
+- [x] Can a Review Removal Company Access My Google Account? | reputation.html | Addresses a common misconception: removal is filed through official report channels, not by logging into your accounts. | published as blog-review-removal-company-google-account-access.html
+- [x] What's the Difference Between Reporting a Review and Disputing It? | reputation.html | Terminology clarity for business owners navigating platform processes. | published as blog-reporting-vs-disputing-review.html
 
 ## Added off-cycle (user request, not from routine)
 - [x] How to Flag a Review on Trustpilot: Grounds, Evidence, and What to Expect | reputation.html | Deep-dive on Trustpilot's own flagging process, distinct from the earlier Google-comparison post. | published as blog-how-to-flag-review-trustpilot.html

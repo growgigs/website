@@ -24,6 +24,9 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Glassdoor Review Removal: What's Different From Google and Trustpilot | reputation.html | Dedicated deep-dive on Glassdoor's own policies and process, mirroring the Trustpilot treatment. | published as blog-glassdoor-review-removal.html
 - [x] Can a Former Employee's Negative Glassdoor Review Be Removed? | reputation.html | Specific scenario: ex-employee reviews, what qualifies vs. what's just a bad parting. | published as blog-glassdoor-former-employee-review.html
 - [x] How to Tell If a Competitor Is Behind a Fake Review Campaign | reputation.html | Pattern-recognition checklist, careful not to encourage baseless accusations. | published as blog-competitor-fake-review-campaign.html
+- [ ] Can You Remove a Review That Was Later Edited to Be Worse? | reputation.html | Whether an edited review resets its eligibility or timing, and what actually changes.
+- [ ] What Happens to a Business's Reviews When Ownership Changes? | reputation.html | New owner inheriting old reviews: what stays, what can be addressed, what can't.
+- [ ] How Does Google Actually Detect Fake Reviews at Scale? | reputation.html | High-level, honest look at detection signals, no invented specifics about the algorithm.
 
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
@@ -37,6 +40,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Reporting a Duplicate or Fake Google Maps Listing for a Competitor's Location | takedowns.html | Walkthrough of Google's duplicate/spam listing reporting flow. | published as blog-fake-duplicate-google-maps-listing.html
 - [x] What to Do If Your Business Logo or Branding Is Being Used Without Permission | takedowns.html | Trademark/brand misuse takedown process, distinct from general copyright. | published as blog-logo-branding-used-without-permission.html
 - [x] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain. | published as blog-complaint-board-site-content-removal.html
+- [ ] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting.
+- [ ] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases.
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
@@ -50,12 +55,16 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact. | published as blog-how-often-post-google-business-profile.html
 - [x] How to Handle Duplicate Listings After a Business Merger or Rebrand | seo.html | Consolidating profiles correctly instead of leaving old listings active. | published as blog-duplicate-listings-merger-rebrand.html
 - [x] Do Reviews From Other Locations Count Toward My Listing? | seo.html | Clears up confusion for multi-location businesses about how ratings work per-listing. | published as blog-reviews-other-locations-count.html
+- [ ] Should You Respond to Every Google Review, Even Short Positive Ones? | seo.html | Practical engagement guidance, not a blanket "always respond" rule.
+- [ ] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing.
+- [ ] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly.
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
 - [x] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle. | published as blog-agencies-white-label-review-removal.html
 - [x] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal. | published as blog-white-label-partner-revenue-share-flat-fee.html
 - [x] Onboarding Checklist: What to Prepare Before Launching a White-Label Partnership | partners.html | Practical partner-side prep list, not sales copy. | published as blog-white-label-onboarding-checklist.html
+- [ ] How to Evaluate a White-Label Provider's Track Record Before Signing | partners.html | What questions to ask, and skepticism toward unverifiable success-rate claims.
 
 ## General Trust & Buyer Education (none, or link to homepage)
 - [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html
@@ -76,3 +85,4 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 - [x] What Happens If a Trustpilot Reviewer Ignores the Verification Request? | reputation.html | Deeper look at the silence outcome of the "genuine experience" flagging step. | published as blog-trustpilot-reviewer-ignores-verification.html
 - [ ] Trustpilot vs. Google Reviews: Which Should You Prioritize Removing First? | reputation.html | Decision framework for businesses dealing with bad reviews on both platforms at once.
 - [ ] Can You Get a Trustpilot Review Removed for Being Off-Topic? | reputation.html | Explains the off-topic complaint category and what actually qualifies.
+- [ ] What Happens to a Trustpilot Review When a Business Rebrands or Is Acquired? | reputation.html | Trustpilot-specific version of the Google merger/rebrand listing-cleanup post.

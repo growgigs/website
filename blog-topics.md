@@ -24,8 +24,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Glassdoor Review Removal: What's Different From Google and Trustpilot | reputation.html | Dedicated deep-dive on Glassdoor's own policies and process, mirroring the Trustpilot treatment. | published as blog-glassdoor-review-removal.html
 - [x] Can a Former Employee's Negative Glassdoor Review Be Removed? | reputation.html | Specific scenario: ex-employee reviews, what qualifies vs. what's just a bad parting. | published as blog-glassdoor-former-employee-review.html
 - [x] How to Tell If a Competitor Is Behind a Fake Review Campaign | reputation.html | Pattern-recognition checklist, careful not to encourage baseless accusations. | published as blog-competitor-fake-review-campaign.html
-- [ ] Can You Remove a Review That Was Later Edited to Be Worse? | reputation.html | Whether an edited review resets its eligibility or timing, and what actually changes.
-- [ ] What Happens to a Business's Reviews When Ownership Changes? | reputation.html | New owner inheriting old reviews: what stays, what can be addressed, what can't.
+- [x] Can You Remove a Review That Was Later Edited to Be Worse? | reputation.html | Whether an edited review resets its eligibility or timing, and what actually changes. | published as blog-review-edited-to-be-worse.html
+- [x] What Happens to a Business's Reviews When Ownership Changes? | reputation.html | New owner inheriting old reviews: what stays, what can be addressed, what can't. | published as blog-ownership-change-business-reviews.html
 - [ ] How Does Google Actually Detect Fake Reviews at Scale? | reputation.html | High-level, honest look at detection signals, no invented specifics about the algorithm.
 
 ## Content Takedowns (takedowns.html)

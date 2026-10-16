@@ -564,6 +564,33 @@ h2 {
 .article ul, .article ol { margin: 0 0 18px; padding-left: 22px; }
 .article li { margin-bottom: 8px; }
 .article .lede { font-size: 1.1rem; color: var(--muted); margin-bottom: 32px; }
+
+.deep-dive {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  background: var(--card);
+}
+.deep-dive summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+  background: var(--bg-soft);
+}
+.deep-dive summary::-webkit-details-marker { display: none; }
+.deep-dive summary .chevron { flex-shrink: 0; transition: transform 0.2s; }
+.deep-dive[open] summary .chevron { transform: rotate(180deg); }
+.deep-dive .deep-dive-body { padding: 28px 24px 8px; }
+.deep-dive .deep-dive-body h3 { margin-top: 0; }
+.deep-dive .deep-dive-body h3:not(:first-child) { margin-top: 28px; }
 .article-illustration {
   display: block;
   width: 100%;

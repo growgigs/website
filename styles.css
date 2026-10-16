@@ -581,15 +581,18 @@ h2 {
 .blog-card {
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 28px;
+  padding: 0 0 28px;
   text-decoration: none;
   color: inherit;
   display: block;
+  overflow: hidden;
   transition: border-color 0.15s, transform 0.15s;
 }
 .blog-card:hover { border-color: var(--green); transform: translateY(-2px); }
-.blog-card h3 { margin: 0 0 10px; font-size: 1.1rem; }
-.blog-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.blog-card-img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; margin-bottom: 18px; }
+.blog-card h3 { margin: 0 0 10px; padding: 0 28px; font-size: 1.1rem; }
+.blog-card p { margin: 0 0 16px; padding: 0 28px; color: var(--muted); font-size: 0.92rem; }
+.blog-card .card-cta { padding: 0 28px; color: var(--green-dark); font-weight: 600; font-size: 0.88rem; }
 @media (max-width: 860px) {
   .blog-grid { grid-template-columns: 1fr; }
 }

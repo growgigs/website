@@ -26,7 +26,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Tell If a Competitor Is Behind a Fake Review Campaign | reputation.html | Pattern-recognition checklist, careful not to encourage baseless accusations. | published as blog-competitor-fake-review-campaign.html
 - [x] Can You Remove a Review That Was Later Edited to Be Worse? | reputation.html | Whether an edited review resets its eligibility or timing, and what actually changes. | published as blog-review-edited-to-be-worse.html
 - [x] What Happens to a Business's Reviews When Ownership Changes? | reputation.html | New owner inheriting old reviews: what stays, what can be addressed, what can't. | published as blog-ownership-change-business-reviews.html
-- [ ] How Does Google Actually Detect Fake Reviews at Scale? | reputation.html | High-level, honest look at detection signals, no invented specifics about the algorithm.
+- [x] How Does Google Actually Detect Fake Reviews at Scale? | reputation.html | High-level, honest look at detection signals, no invented specifics about the algorithm. | published as blog-how-google-detects-fake-reviews.html
 
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
@@ -40,7 +40,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Reporting a Duplicate or Fake Google Maps Listing for a Competitor's Location | takedowns.html | Walkthrough of Google's duplicate/spam listing reporting flow. | published as blog-fake-duplicate-google-maps-listing.html
 - [x] What to Do If Your Business Logo or Branding Is Being Used Without Permission | takedowns.html | Trademark/brand misuse takedown process, distinct from general copyright. | published as blog-logo-branding-used-without-permission.html
 - [x] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain. | published as blog-complaint-board-site-content-removal.html
-- [ ] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting.
+- [x] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting. | published as blog-remove-negative-youtube-video.html
 - [ ] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases.
 
 ## Local SEO (seo.html)

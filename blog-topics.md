@@ -41,7 +41,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] What to Do If Your Business Logo or Branding Is Being Used Without Permission | takedowns.html | Trademark/brand misuse takedown process, distinct from general copyright. | published as blog-logo-branding-used-without-permission.html
 - [x] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain. | published as blog-complaint-board-site-content-removal.html
 - [x] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting. | published as blog-remove-negative-youtube-video.html
-- [ ] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases.
+- [x] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases. | published as blog-confidential-pricing-contracts-posted-online.html
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
@@ -55,7 +55,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Often Should You Post on Google Business Profile? | seo.html | Realistic posting cadence advice without overstating ranking impact. | published as blog-how-often-post-google-business-profile.html
 - [x] How to Handle Duplicate Listings After a Business Merger or Rebrand | seo.html | Consolidating profiles correctly instead of leaving old listings active. | published as blog-duplicate-listings-merger-rebrand.html
 - [x] Do Reviews From Other Locations Count Toward My Listing? | seo.html | Clears up confusion for multi-location businesses about how ratings work per-listing. | published as blog-reviews-other-locations-count.html
-- [ ] Should You Respond to Every Google Review, Even Short Positive Ones? | seo.html | Practical engagement guidance, not a blanket "always respond" rule.
+- [x] Should You Respond to Every Google Review, Even Short Positive Ones? | seo.html | Practical engagement guidance, not a blanket "always respond" rule. | published as blog-respond-every-positive-review.html
 - [ ] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing.
 - [ ] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly.
 

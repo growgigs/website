@@ -27,6 +27,11 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Can You Remove a Review That Was Later Edited to Be Worse? | reputation.html | Whether an edited review resets its eligibility or timing, and what actually changes. | published as blog-review-edited-to-be-worse.html
 - [x] What Happens to a Business's Reviews When Ownership Changes? | reputation.html | New owner inheriting old reviews: what stays, what can be addressed, what can't. | published as blog-ownership-change-business-reviews.html
 - [x] How Does Google Actually Detect Fake Reviews at Scale? | reputation.html | High-level, honest look at detection signals, no invented specifics about the algorithm. | published as blog-how-google-detects-fake-reviews.html
+- [ ] Can You Remove a Review That Includes a Photo or Video? | reputation.html | Media-attached reviews raise different evidence and policy considerations than text alone.
+- [ ] Does Closing and Reopening Under a New Name Reset Your Reviews? | reputation.html | A rebrand without an actual ownership change, distinct from the merger/sale scenario already covered.
+- [ ] How to Read a Reputation Management Company's Case Studies Critically | reputation.html | Buyer-education piece on spotting vague or cherry-picked "results," distinct from the hiring-checklist post.
+- [ ] Does Trustpilot Treat Verified Paying Businesses Differently From Free Accounts? | reputation.html | Trustpilot-specific: what a paid Business account actually changes about flagging and support access.
+- [ ] Can You Remove a Trustpilot Review Posted by a Competitor? | reputation.html | Conflict-of-interest category specific to Trustpilot, distinct from the Google competitor-campaign post.
 
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
@@ -42,6 +47,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain. | published as blog-complaint-board-site-content-removal.html
 - [x] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting. | published as blog-remove-negative-youtube-video.html
 - [x] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases. | published as blog-confidential-pricing-contracts-posted-online.html
+- [ ] What to Do If Someone Creates a Fake Review or Complaint Site About Your Business | takedowns.html | A site built specifically to target one business, distinct from the general complaint-board removal post already covered.
+- [ ] How to Handle AI-Generated Fake Content About Your Business | takedowns.html | Fabricated images, audio, or video; how reporting this differs from standard content takedowns.
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
@@ -58,6 +65,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Should You Respond to Every Google Review, Even Short Positive Ones? | seo.html | Practical engagement guidance, not a blanket "always respond" rule. | published as blog-respond-every-positive-review.html
 - [x] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing. | published as blog-gbp-suggest-an-edit.html
 - [x] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly. | published as blog-competitor-worse-reviews-outranks-you.html
+- [ ] How to Handle a Service-Area Business Listing Without a Storefront | seo.html | Setting up and optimizing a Google Business Profile when there's no public-facing address.
+- [ ] Does Having Multiple Google Business Profiles for One Location Hurt You? | seo.html | Duplicate-profile risk, distinct from the merger/rebrand consolidation post already covered.
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
@@ -65,6 +74,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal. | published as blog-white-label-partner-revenue-share-flat-fee.html
 - [x] Onboarding Checklist: What to Prepare Before Launching a White-Label Partnership | partners.html | Practical partner-side prep list, not sales copy. | published as blog-white-label-onboarding-checklist.html
 - [ ] How to Evaluate a White-Label Provider's Track Record Before Signing | partners.html | What questions to ask, and skepticism toward unverifiable success-rate claims.
+- [ ] What SLAs or Guarantees Should Be in a White-Label Partnership Contract | partners.html | Practical contract-structure guidance for agencies evaluating a vendor relationship.
 
 ## General Trust & Buyer Education (none, or link to homepage)
 - [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html

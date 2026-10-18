@@ -56,8 +56,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Handle Duplicate Listings After a Business Merger or Rebrand | seo.html | Consolidating profiles correctly instead of leaving old listings active. | published as blog-duplicate-listings-merger-rebrand.html
 - [x] Do Reviews From Other Locations Count Toward My Listing? | seo.html | Clears up confusion for multi-location businesses about how ratings work per-listing. | published as blog-reviews-other-locations-count.html
 - [x] Should You Respond to Every Google Review, Even Short Positive Ones? | seo.html | Practical engagement guidance, not a blanket "always respond" rule. | published as blog-respond-every-positive-review.html
-- [ ] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing.
-- [ ] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly.
+- [x] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing. | published as blog-gbp-suggest-an-edit.html
+- [x] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly. | published as blog-competitor-worse-reviews-outranks-you.html
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html

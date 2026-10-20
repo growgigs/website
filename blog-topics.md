@@ -29,8 +29,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How Does Google Actually Detect Fake Reviews at Scale? | reputation.html | High-level, honest look at detection signals, no invented specifics about the algorithm. | published as blog-how-google-detects-fake-reviews.html
 - [x] Can You Remove a Review That Includes a Photo or Video? | reputation.html | Media-attached reviews raise different evidence and policy considerations than text alone. | published as blog-review-with-photo-or-video.html
 - [x] Does Closing and Reopening Under a New Name Reset Your Reviews? | reputation.html | A rebrand without an actual ownership change, distinct from the merger/sale scenario already covered. | published as blog-closing-reopening-new-name-reviews.html
-- [ ] How to Read a Reputation Management Company's Case Studies Critically | reputation.html | Buyer-education piece on spotting vague or cherry-picked "results," distinct from the hiring-checklist post.
-- [ ] Does Trustpilot Treat Verified Paying Businesses Differently From Free Accounts? | reputation.html | Trustpilot-specific: what a paid Business account actually changes about flagging and support access.
+- [x] How to Read a Reputation Management Company's Case Studies Critically | reputation.html | Buyer-education piece on spotting vague or cherry-picked "results," distinct from the hiring-checklist post. | published as blog-read-case-studies-critically.html
+- [x] Does Trustpilot Treat Verified Paying Businesses Differently From Free Accounts? | reputation.html | Trustpilot-specific: what a paid Business account actually changes about flagging and support access. | published as blog-trustpilot-verified-vs-free-account.html
 - [ ] Can You Remove a Trustpilot Review Posted by a Competitor? | reputation.html | Conflict-of-interest category specific to Trustpilot, distinct from the Google competitor-campaign post.
 
 ## Content Takedowns (takedowns.html)

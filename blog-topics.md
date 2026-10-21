@@ -31,7 +31,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Does Closing and Reopening Under a New Name Reset Your Reviews? | reputation.html | A rebrand without an actual ownership change, distinct from the merger/sale scenario already covered. | published as blog-closing-reopening-new-name-reviews.html
 - [x] How to Read a Reputation Management Company's Case Studies Critically | reputation.html | Buyer-education piece on spotting vague or cherry-picked "results," distinct from the hiring-checklist post. | published as blog-read-case-studies-critically.html
 - [x] Does Trustpilot Treat Verified Paying Businesses Differently From Free Accounts? | reputation.html | Trustpilot-specific: what a paid Business account actually changes about flagging and support access. | published as blog-trustpilot-verified-vs-free-account.html
-- [ ] Can You Remove a Trustpilot Review Posted by a Competitor? | reputation.html | Conflict-of-interest category specific to Trustpilot, distinct from the Google competitor-campaign post.
+- [x] Can You Remove a Trustpilot Review Posted by a Competitor? | reputation.html | Conflict-of-interest category specific to Trustpilot, distinct from the Google competitor-campaign post. | published as blog-trustpilot-competitor-review.html
 
 ## Content Takedowns (takedowns.html)
 - [x] How to Remove a Fake Social Media Profile Impersonating Your Business | takedowns.html | Platform-by-platform impersonation reporting. | published as blog-fake-social-media-impersonation.html
@@ -47,7 +47,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Removing Negative Content From a Complaint Board Site | takedowns.html | Honest look at sites like Ripoff Report that often refuse removal even for false content, and what options remain. | published as blog-complaint-board-site-content-removal.html
 - [x] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting. | published as blog-remove-negative-youtube-video.html
 - [x] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases. | published as blog-confidential-pricing-contracts-posted-online.html
-- [ ] What to Do If Someone Creates a Fake Review or Complaint Site About Your Business | takedowns.html | A site built specifically to target one business, distinct from the general complaint-board removal post already covered.
+- [x] What to Do If Someone Creates a Fake Review or Complaint Site About Your Business | takedowns.html | A site built specifically to target one business, distinct from the general complaint-board removal post already covered. | published as blog-fake-review-complaint-site.html
 - [ ] How to Handle AI-Generated Fake Content About Your Business | takedowns.html | Fabricated images, audio, or video; how reporting this differs from standard content takedowns.
 
 ## Local SEO (seo.html)

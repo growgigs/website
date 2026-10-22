@@ -48,7 +48,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How to Remove a Negative Video About Your Business From YouTube | takedowns.html | Platform-specific takedown process, distinct from social media impersonation reporting. | published as blog-remove-negative-youtube-video.html
 - [x] What to Do If Confidential Pricing or Contracts Get Posted Online | takedowns.html | Handling a leak of internal business documents, separate from defamation/impersonation cases. | published as blog-confidential-pricing-contracts-posted-online.html
 - [x] What to Do If Someone Creates a Fake Review or Complaint Site About Your Business | takedowns.html | A site built specifically to target one business, distinct from the general complaint-board removal post already covered. | published as blog-fake-review-complaint-site.html
-- [ ] How to Handle AI-Generated Fake Content About Your Business | takedowns.html | Fabricated images, audio, or video; how reporting this differs from standard content takedowns.
+- [x] How to Handle AI-Generated Fake Content About Your Business | takedowns.html | Fabricated images, audio, or video; how reporting this differs from standard content takedowns. | published as blog-ai-generated-fake-content.html
 
 ## Local SEO (seo.html)
 - [x] How to Optimize Your Google Business Profile | seo.html | Practical checklist, no gimmicks. | published as blog-optimize-google-business-profile.html
@@ -65,7 +65,7 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] Should You Respond to Every Google Review, Even Short Positive Ones? | seo.html | Practical engagement guidance, not a blanket "always respond" rule. | published as blog-respond-every-positive-review.html
 - [x] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing. | published as blog-gbp-suggest-an-edit.html
 - [x] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly. | published as blog-competitor-worse-reviews-outranks-you.html
-- [ ] How to Handle a Service-Area Business Listing Without a Storefront | seo.html | Setting up and optimizing a Google Business Profile when there's no public-facing address.
+- [x] How to Handle a Service-Area Business Listing Without a Storefront | seo.html | Setting up and optimizing a Google Business Profile when there's no public-facing address. | published as blog-service-area-business-listing.html
 - [ ] Does Having Multiple Google Business Profiles for One Location Hurt You? | seo.html | Duplicate-profile risk, distinct from the merger/rebrand consolidation post already covered.
 
 ## Partnerships (partners.html)

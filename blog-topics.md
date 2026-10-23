@@ -66,15 +66,17 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] What Is a Google Business Profile "Suggest an Edit" and Should You Worry About It? | seo.html | Explains the crowd-sourced edit feature and what to do if one changes your listing. | published as blog-gbp-suggest-an-edit.html
 - [x] Why Does My Competitor Have Worse Reviews But Still Outrank Me? | seo.html | Reviews are one ranking input among several; explains the others honestly. | published as blog-competitor-worse-reviews-outranks-you.html
 - [x] How to Handle a Service-Area Business Listing Without a Storefront | seo.html | Setting up and optimizing a Google Business Profile when there's no public-facing address. | published as blog-service-area-business-listing.html
-- [ ] Does Having Multiple Google Business Profiles for One Location Hurt You? | seo.html | Duplicate-profile risk, distinct from the merger/rebrand consolidation post already covered.
+- [x] Does Having Multiple Google Business Profiles for One Location Hurt You? | seo.html | Duplicate-profile risk, distinct from the merger/rebrand consolidation post already covered. | published as blog-multiple-gbp-one-location.html
 
 ## Partnerships (partners.html)
 - [x] What to Look for in a White-Label Reputation Management Partner | partners.html | Buyer's checklist for agencies evaluating vendors. | published as blog-white-label-reputation-partner-checklist.html
 - [x] How Agencies Can Offer Review Removal Without Building It In-House | partners.html | Subcontracting/white-label angle. | published as blog-agencies-white-label-review-removal.html
 - [x] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal. | published as blog-white-label-partner-revenue-share-flat-fee.html
 - [x] Onboarding Checklist: What to Prepare Before Launching a White-Label Partnership | partners.html | Practical partner-side prep list, not sales copy. | published as blog-white-label-onboarding-checklist.html
-- [ ] How to Evaluate a White-Label Provider's Track Record Before Signing | partners.html | What questions to ask, and skepticism toward unverifiable success-rate claims.
-- [ ] What SLAs or Guarantees Should Be in a White-Label Partnership Contract | partners.html | Practical contract-structure guidance for agencies evaluating a vendor relationship.
+- [x] How to Evaluate a White-Label Provider's Track Record Before Signing | partners.html | What questions to ask, and skepticism toward unverifiable success-rate claims. | published as blog-evaluate-white-label-track-record.html
+- [ ] What SLAs or Guarantees Should Be in a White-Label Partnership Contract | white-label-reputation-management.html | Practical contract-structure guidance for agencies evaluating a vendor relationship.
+- [ ] How to Price a White-Label Local SEO Package When Reselling to Clients | white-label-reputation-management.html | Pricing structure for reselling local SEO specifically, distinct from the review-removal revenue-share/flat-fee post already covered.
+- [ ] What Happens If a White-Label Partner's Client Relationship Ends Mid-Engagement | white-label-reputation-management.html | Exit/transition scenario: data handoff, in-progress cases, and what agencies should have in the contract for this upfront.
 
 ## General Trust & Buyer Education (none, or link to homepage)
 - [x] Is It Legal to Have a Bad Review Removed? | reputation.html | Address the legality/ethics question directly. | published as blog-is-it-legal-remove-bad-review.html
@@ -95,4 +97,13 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 - [x] What Happens If a Trustpilot Reviewer Ignores the Verification Request? | reputation.html | Deeper look at the silence outcome of the "genuine experience" flagging step. | published as blog-trustpilot-reviewer-ignores-verification.html
 - [ ] Trustpilot vs. Google Reviews: Which Should You Prioritize Removing First? | reputation.html | Decision framework for businesses dealing with bad reviews on both platforms at once.
 - [ ] Can You Get a Trustpilot Review Removed for Being Off-Topic? | reputation.html | Explains the off-topic complaint category and what actually qualifies.
-- [ ] What Happens to a Trustpilot Review When a Business Rebrands or Is Acquired? | reputation.html | Trustpilot-specific version of the Google merger/rebrand listing-cleanup post.
+- [ ] What Happens to a Trustpilot Review When a Business Rebrands or Is Acquired? | google-review-removal.html | Trustpilot-specific version of the Google merger/rebrand listing-cleanup post.
+- [ ] Can You Remove a Trustpilot Review If the Reviewer Used a Fake Name? | google-review-removal.html | A specific evidence category distinct from conflict-of-interest, off-topic, or ignored-verification posts already covered.
+
+## Refill batch (added to keep the queue from running dry)
+- [ ] How Google Business Profile Q&A Spam Can Hurt Your Listing | local-seo-services.html | The public Q&A feature: how trolls or competitors post fake questions/answers, and how to manage it.
+- [ ] What to Do If Your Google Business Profile Shows Incorrect Hours or a "Permanently Closed" Status | local-seo-services.html | A common, damaging GBP data error distinct from suspension or category mistakes already covered.
+- [ ] How to Handle a Negative Reddit Thread About Your Business | content-takedown-services.html | Platform-specific reporting process, distinct from the YouTube, social-impersonation, and complaint-board posts already covered.
+- [ ] What to Do When a Negative TikTok Video About Your Business Goes Viral | content-takedown-services.html | Short-form video platform angle, distinct from the standalone YouTube takedown post.
+- [ ] Can a Review Posted on the Wrong Google Business Profile Be Removed? | google-review-removal.html | A mistaken-submission scenario, distinct from the multi-location ratings-aggregation post already covered.
+- [ ] What to Do About a Review That Exposes a Customer's Private or Medical Information | google-review-removal.html | A privacy-violation reporting category, distinct from defamation or off-topic grounds already covered.

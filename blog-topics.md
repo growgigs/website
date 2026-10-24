@@ -74,8 +74,8 @@ Format: `- [ ] Title | links to (service page or "none") | one-line angle`
 - [x] How White-Label Partners Get Paid: Revenue Share vs. Flat Fee | partners.html | Compensation structures agencies should understand before reselling review removal. | published as blog-white-label-partner-revenue-share-flat-fee.html
 - [x] Onboarding Checklist: What to Prepare Before Launching a White-Label Partnership | partners.html | Practical partner-side prep list, not sales copy. | published as blog-white-label-onboarding-checklist.html
 - [x] How to Evaluate a White-Label Provider's Track Record Before Signing | partners.html | What questions to ask, and skepticism toward unverifiable success-rate claims. | published as blog-evaluate-white-label-track-record.html
-- [ ] What SLAs or Guarantees Should Be in a White-Label Partnership Contract | white-label-reputation-management.html | Practical contract-structure guidance for agencies evaluating a vendor relationship.
-- [ ] How to Price a White-Label Local SEO Package When Reselling to Clients | white-label-reputation-management.html | Pricing structure for reselling local SEO specifically, distinct from the review-removal revenue-share/flat-fee post already covered.
+- [x] What SLAs or Guarantees Should Be in a White-Label Partnership Contract | white-label-reputation-management.html | Practical contract-structure guidance for agencies evaluating a vendor relationship. | published as blog-white-label-sla-contract-guarantees.html
+- [x] How to Price a White-Label Local SEO Package When Reselling to Clients | white-label-reputation-management.html | Pricing structure for reselling local SEO specifically, distinct from the review-removal revenue-share/flat-fee post already covered. | published as blog-price-white-label-local-seo-package.html
 - [ ] What Happens If a White-Label Partner's Client Relationship Ends Mid-Engagement | white-label-reputation-management.html | Exit/transition scenario: data handoff, in-progress cases, and what agencies should have in the contract for this upfront.
 
 ## General Trust & Buyer Education (none, or link to homepage)

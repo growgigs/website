@@ -96,8 +96,8 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 - [x] Can a Trustpilot Review Be Removed If You've Already Responded to It? | reputation.html | Trustpilot-specific version of the "does responding affect eligibility" question already covered for Google. | published as blog-trustpilot-remove-after-responding.html
 - [x] What Happens If a Trustpilot Reviewer Ignores the Verification Request? | reputation.html | Deeper look at the silence outcome of the "genuine experience" flagging step. | published as blog-trustpilot-reviewer-ignores-verification.html
 - [x] Trustpilot vs. Google Reviews: Which Should You Prioritize Removing First? | reputation.html | Decision framework for businesses dealing with bad reviews on both platforms at once. | published as blog-trustpilot-vs-google-prioritize.html
-- [ ] Can You Get a Trustpilot Review Removed for Being Off-Topic? | reputation.html | Explains the off-topic complaint category and what actually qualifies.
-- [ ] What Happens to a Trustpilot Review When a Business Rebrands or Is Acquired? | google-review-removal.html | Trustpilot-specific version of the Google merger/rebrand listing-cleanup post.
+- [x] Can You Get a Trustpilot Review Removed for Being Off-Topic? | reputation.html | Explains the off-topic complaint category and what actually qualifies. | published as blog-trustpilot-off-topic-review.html
+- [x] What Happens to a Trustpilot Review When a Business Rebrands or Is Acquired? | google-review-removal.html | Trustpilot-specific version of the Google merger/rebrand listing-cleanup post. | published as blog-trustpilot-rebrand-acquisition.html
 - [ ] Can You Remove a Trustpilot Review If the Reviewer Used a Fake Name? | google-review-removal.html | A specific evidence category distinct from conflict-of-interest, off-topic, or ignored-verification posts already covered.
 
 ## Refill batch (added to keep the queue from running dry)

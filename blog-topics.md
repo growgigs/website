@@ -98,12 +98,24 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 - [x] Trustpilot vs. Google Reviews: Which Should You Prioritize Removing First? | reputation.html | Decision framework for businesses dealing with bad reviews on both platforms at once. | published as blog-trustpilot-vs-google-prioritize.html
 - [x] Can You Get a Trustpilot Review Removed for Being Off-Topic? | reputation.html | Explains the off-topic complaint category and what actually qualifies. | published as blog-trustpilot-off-topic-review.html
 - [x] What Happens to a Trustpilot Review When a Business Rebrands or Is Acquired? | google-review-removal.html | Trustpilot-specific version of the Google merger/rebrand listing-cleanup post. | published as blog-trustpilot-rebrand-acquisition.html
-- [ ] Can You Remove a Trustpilot Review If the Reviewer Used a Fake Name? | google-review-removal.html | A specific evidence category distinct from conflict-of-interest, off-topic, or ignored-verification posts already covered.
+- [x] Can You Remove a Trustpilot Review If the Reviewer Used a Fake Name? | google-review-removal.html | A specific evidence category distinct from conflict-of-interest, off-topic, or ignored-verification posts already covered. | published as blog-trustpilot-fake-name-reviewer.html
 
 ## Refill batch (added to keep the queue from running dry)
-- [ ] How Google Business Profile Q&A Spam Can Hurt Your Listing | local-seo-services.html | The public Q&A feature: how trolls or competitors post fake questions/answers, and how to manage it.
+- [x] How Google Business Profile Q&A Spam Can Hurt Your Listing | local-seo-services.html | The public Q&A feature: how trolls or competitors post fake questions/answers, and how to manage it. | published as blog-gbp-qa-spam.html
 - [ ] What to Do If Your Google Business Profile Shows Incorrect Hours or a "Permanently Closed" Status | local-seo-services.html | A common, damaging GBP data error distinct from suspension or category mistakes already covered.
 - [ ] How to Handle a Negative Reddit Thread About Your Business | content-takedown-services.html | Platform-specific reporting process, distinct from the YouTube, social-impersonation, and complaint-board posts already covered.
 - [ ] What to Do When a Negative TikTok Video About Your Business Goes Viral | content-takedown-services.html | Short-form video platform angle, distinct from the standalone YouTube takedown post.
 - [ ] Can a Review Posted on the Wrong Google Business Profile Be Removed? | google-review-removal.html | A mistaken-submission scenario, distinct from the multi-location ratings-aggregation post already covered.
 - [ ] What to Do About a Review That Exposes a Customer's Private or Medical Information | google-review-removal.html | A privacy-violation reporting category, distinct from defamation or off-topic grounds already covered.
+
+## Refill batch 2 (queue dropped to 5 after this run)
+- [ ] Can a Google Review Be Removed for Containing Hate Speech or Slurs? | google-review-removal.html | A distinct Google policy category from defamation, non-customer, or off-topic grounds already covered.
+- [ ] Can You Remove a Yelp Review If the Reviewer Never Actually Visited? | google-review-removal.html | A specific non-customer scenario deep-dive, distinct from the general "Yelp Review Removal: What's Actually Possible" overview already covered.
+- [ ] Does Trustpilot's TrustScore Algorithm Favor Recent Reviews? | google-review-removal.html | A "how it works" explainer on the scoring mechanics, distinct from the removal-process posts already covered.
+- [ ] How Does Google Decide Which Photos Show First on Your Business Profile? | local-seo-services.html | A specific GBP feature mechanics piece, distinct from general profile optimization already covered.
+- [ ] Can a Competitor's False Report Get Your Google Business Profile Suspended? | local-seo-services.html | The adversarial-reporting angle on suspension, distinct from the general suspension-causes post already covered.
+- [ ] Do Reviews From Years Ago Still Affect Your Local Ranking Today? | local-seo-services.html | A ranking-algorithm recency-weighting question, distinct from the review-count and review-expiry posts already covered.
+- [ ] How to Handle a Negative Review Screenshot Going Viral on Social Media | content-takedown-services.html | Re-shared screenshot virality across platforms, distinct from the platform-specific takedown posts already covered.
+- [ ] What to Do If Someone Creates a Parody Account Mocking Your Business | content-takedown-services.html | The satire/parody legal distinction from a genuine impersonation violation, a different angle from the fake-impersonation post already covered.
+- [ ] How Many Clients Can One White-Label Partner Realistically Support? | white-label-reputation-management.html | A capacity/scaling question for agencies vetting a vendor, distinct from pricing, SLA, onboarding, and exit-terms posts already covered.
+- [ ] What's the Difference Between a Testimonial and a Review, Legally? | none | General buyer-education terminology piece distinct from the existing reporting-vs-disputing and reputation-vs-removal clarity posts.

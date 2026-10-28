@@ -102,8 +102,8 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 
 ## Refill batch (added to keep the queue from running dry)
 - [x] How Google Business Profile Q&A Spam Can Hurt Your Listing | local-seo-services.html | The public Q&A feature: how trolls or competitors post fake questions/answers, and how to manage it. | published as blog-gbp-qa-spam.html
-- [ ] What to Do If Your Google Business Profile Shows Incorrect Hours or a "Permanently Closed" Status | local-seo-services.html | A common, damaging GBP data error distinct from suspension or category mistakes already covered.
-- [ ] How to Handle a Negative Reddit Thread About Your Business | content-takedown-services.html | Platform-specific reporting process, distinct from the YouTube, social-impersonation, and complaint-board posts already covered.
+- [x] What to Do If Your Google Business Profile Shows Incorrect Hours or a "Permanently Closed" Status | local-seo-services.html | A common, damaging GBP data error distinct from suspension or category mistakes already covered. | published as blog-gbp-incorrect-hours-permanently-closed.html
+- [x] How to Handle a Negative Reddit Thread About Your Business | content-takedown-services.html | Platform-specific reporting process, distinct from the YouTube, social-impersonation, and complaint-board posts already covered. | published as blog-negative-reddit-thread-business.html
 - [ ] What to Do When a Negative TikTok Video About Your Business Goes Viral | content-takedown-services.html | Short-form video platform angle, distinct from the standalone YouTube takedown post.
 - [ ] Can a Review Posted on the Wrong Google Business Profile Be Removed? | google-review-removal.html | A mistaken-submission scenario, distinct from the multi-location ratings-aggregation post already covered.
 - [ ] What to Do About a Review That Exposes a Customer's Private or Medical Information | google-review-removal.html | A privacy-violation reporting category, distinct from defamation or off-topic grounds already covered.

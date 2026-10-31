@@ -110,8 +110,8 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 
 ## Refill batch 2 (queue dropped to 5 after this run)
 - [x] Can a Google Review Be Removed for Containing Hate Speech or Slurs? | google-review-removal.html | A distinct Google policy category from defamation, non-customer, or off-topic grounds already covered. | published as blog-review-hate-speech-slurs.html
-- [ ] Can You Remove a Yelp Review If the Reviewer Never Actually Visited? | google-review-removal.html | A specific non-customer scenario deep-dive, distinct from the general "Yelp Review Removal: What's Actually Possible" overview already covered.
-- [ ] Does Trustpilot's TrustScore Algorithm Favor Recent Reviews? | google-review-removal.html | A "how it works" explainer on the scoring mechanics, distinct from the removal-process posts already covered.
+- [x] Can You Remove a Yelp Review If the Reviewer Never Actually Visited? | google-review-removal.html | A specific non-customer scenario deep-dive, distinct from the general "Yelp Review Removal: What's Actually Possible" overview already covered. | published as blog-yelp-reviewer-never-visited.html
+- [x] Does Trustpilot's TrustScore Algorithm Favor Recent Reviews? | google-review-removal.html | A "how it works" explainer on the scoring mechanics, distinct from the removal-process posts already covered. | published as blog-trustpilot-trustscore-recent-reviews.html
 - [ ] How Does Google Decide Which Photos Show First on Your Business Profile? | local-seo-services.html | A specific GBP feature mechanics piece, distinct from general profile optimization already covered.
 - [ ] Can a Competitor's False Report Get Your Google Business Profile Suspended? | local-seo-services.html | The adversarial-reporting angle on suspension, distinct from the general suspension-causes post already covered.
 - [ ] Do Reviews From Years Ago Still Affect Your Local Ranking Today? | local-seo-services.html | A ranking-algorithm recency-weighting question, distinct from the review-count and review-expiry posts already covered.

@@ -134,8 +134,8 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 
 ## Refill batch 4 (queue dropped to 5 after this run)
 - [x] Can a Review Be Removed If the Reviewer's Account Was Hacked or Taken Over? | google-review-removal.html | An account-compromise scenario distinct from fake-name, anonymous, and incentivized-review posts already covered. | published as blog-hacked-account-review-removal.html
-- [ ] Can a Yelp Review Be Removed for Violating Yelp's Self-Promotion Policy? | google-review-removal.html | A reviewer-promoting-their-own-business violation, a distinct Yelp policy category from the never-visited post already covered.
-- [ ] How to Handle a Negative Review That Cites Pricing You No Longer Charge | google-review-removal.html | An outdated-information scenario distinct from the false-claim and off-topic categories already covered.
+- [x] Can a Yelp Review Be Removed for Violating Yelp's Self-Promotion Policy? | google-review-removal.html | A reviewer-promoting-their-own-business violation, a distinct Yelp policy category from the never-visited post already covered. | published as blog-yelp-self-promotion-review.html
+- [x] How to Handle a Negative Review That Cites Pricing You No Longer Charge | google-review-removal.html | An outdated-information scenario distinct from the false-claim and off-topic categories already covered. | published as blog-review-outdated-pricing.html
 - [ ] Can a Trustpilot Review Be Flagged for Containing Confidential Business Information? | google-review-removal.html | A trade-secret/confidential-business-info angle, the Trustpilot counterpart to the personal-privacy post already covered for Google.
 - [ ] Does Google Business Profile Messaging Affect Your Response-Time Metrics? | local-seo-services.html | A GBP chat feature mechanic not yet covered by any existing post.
 - [ ] What to Do If Your Google Business Profile Attributes Are Incorrect or Misleading | local-seo-services.html | The attributes feature (accessibility, ownership tags, etc.), distinct from hours/closure status and Q&A spam already covered.

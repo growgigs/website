@@ -140,8 +140,8 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 - [x] Does Google Business Profile Messaging Affect Your Response-Time Metrics? | local-seo-services.html | A GBP chat feature mechanic not yet covered by any existing post. | published as blog-gbp-messaging-response-time.html
 - [x] What to Do If Your Google Business Profile Attributes Are Incorrect or Misleading | local-seo-services.html | The attributes feature (accessibility, ownership tags, etc.), distinct from hours/closure status and Q&A spam already covered. | published as blog-gbp-attributes-incorrect.html
 - [x] What to Do If Your Business Is Mentioned Negatively in a News Article's Comments Section | content-takedown-services.html | The publisher-hosted comments angle, distinct from removing the article itself already covered. | published as blog-negative-news-comments-section.html
-- [ ] Can You Get a Negative Mention Removed From a Podcast Episode? | content-takedown-services.html | An audio-format platform angle, distinct from the video and text platforms already covered.
-- [ ] What Insurance Should a White-Label Partner Carry? | white-label-reputation-management.html | A liability/E&O vetting criterion for agencies, distinct from pricing, SLA, capacity, and exit-terms posts already covered.
+- [x] Can You Get a Negative Mention Removed From a Podcast Episode? | content-takedown-services.html | An audio-format platform angle, distinct from the video and text platforms already covered. | published as blog-podcast-negative-mention-removal.html
+- [x] What Insurance Should a White-Label Partner Carry? | white-label-reputation-management.html | A liability/E&O vetting criterion for agencies, distinct from pricing, SLA, capacity, and exit-terms posts already covered. | published as blog-white-label-partner-insurance.html
 - [ ] What's the Difference Between a Mystery Shopper Report and a Public Review? | none | General buyer-education terminology piece distinct from the testimonial-vs-review and chargeback-vs-review posts already covered.
 
 ## Refill batch 5 (queue dropped to 5 after this run)

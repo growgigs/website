@@ -155,3 +155,15 @@ NOTE: Trustpilot-specific timelines, percentages, and other numeric claims found
 - [ ] What Happens to Your Google Business Profile Reviews If You Change Your Listed Category? | local-seo-services.html | A category-change scenario distinct from the categories-selection post already covered.
 - [ ] Can You Get a Negative Mention Removed From an AI Chatbot's Answer About Your Business? | content-takedown-services.html | An AI-search-answer platform angle, distinct from the AI-generated-fake-content post already covered.
 - [ ] How Does Trustpilot Handle a Review Left During a Service Outage or System Failure? | google-review-removal.html | A circumstance-specific review scenario distinct from the off-topic and outdated-pricing posts already covered.
+
+## Refill batch 6 (queue dropped to 5 after this run)
+- [ ] Can a Negative Review Be Removed If the Reviewer Privately Apologizes or Retracts the Complaint? | google-review-removal.html | A private-retraction scenario distinct from the respond-after-review and reporting-vs-disputing posts already covered.
+- [ ] Does Responding to Reviews in a Language Other Than English Affect Local Ranking? | local-seo-services.html | A multilingual-response angle distinct from the general response-tone posts already covered.
+- [ ] Can You Get a Negative Mention Removed From a Wikipedia Article About Your Business? | content-takedown-services.html | A crowd-edited-reference-site angle distinct from the news-article and defamation posts already covered.
+- [ ] What Reporting Cadence Should a White-Label Partner Provide to Reselling Agencies? | white-label-reputation-management.html | An operational-communication scenario distinct from the onboarding, SLA, capacity, and guarantee-demand posts already covered.
+- [ ] Can a Trustpilot Review Be Removed If the Same Person Posted It From Multiple Accounts? | google-review-removal.html | A multiple-account-abuse angle distinct from the fake-name and verified-account posts already covered.
+- [ ] What's the Difference Between an NPS Survey Score and a Public Review? | none | General buyer-education terminology piece distinct from the testimonial, chargeback, mystery-shopper, and verified-review comparison posts already covered.
+- [ ] Can a Google Review Be Removed If the Reviewer Demanded Payment to Delete It? | google-review-removal.html | A review-extortion angle distinct from the chargeback-dispute and incentivized-review posts already covered.
+- [ ] Do Google Business Profile Posts About Temporary Closures Affect Local Ranking? | local-seo-services.html | A closure-announcement angle distinct from the general posting-frequency and permanently-closed-status posts already covered.
+- [ ] Can You Get a Negative Answer Removed From a Quora Thread About Your Business? | content-takedown-services.html | A Q&A-platform angle distinct from the podcast, newsletter, and comments-section formats already covered.
+- [ ] Should a White-Label Partner Let Reselling Agencies Fully Rebrand Reports as Their Own Work? | white-label-reputation-management.html | A report-rebranding scenario distinct from the client-disclosure-ethics post already covered.
